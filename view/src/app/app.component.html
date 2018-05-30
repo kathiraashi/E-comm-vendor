@@ -1,20 +1,383 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<div class="Header">
+  <div class="HeaderLogo">
+    <img src="assets/Files/images/logo.png" alt="Logo" class="header-logo">
+    <div class="logout">
+      <h5>
+        <a> Logout </a>
+      </h5>
+     
+    </div>
+
+  </div>
+  <div class="HeaderMenu">
+    <ul class="menus">
+      <li class="menu-list">
+        <a>
+          <span style="display:flex">
+            <span class="pull-left"> &nbsp; Dashboard </span>
+          </span>
+        </a>
+      </li>
+
+      <li class="menu-list">
+        <a class="tree-menus active">
+          <span style="display:flex">
+            <span class="pull-left"> &nbsp; Listings </span>
+          </span>
+          <ul class="tree-view">
+            <li class="tree-list">
+              <a>My listings</a>
+            </li>
+            <li class="tree-list">
+              <a>Approved Listings</a>
+            </li>
+          </ul>
+        </a>
+      </li>
+      <li class="menu-list">
+        <a class="tree-menus active">
+          <span style="display:flex">
+            <span class="pull-left"> &nbsp; Orders</span>
+          </span>
+          <ul class="tree-view">
+            <li class="tree-list">
+              <a class="tree-menus active">
+                <span style="display:flex">
+                  <span class="pull-left">&nbsp;Active Orders</span>span>
+                  <ul class="tree-view">
+                    <li class="tree-list">
+                      <a>Order No</a>
+                    </li>
+                  </ul>
+                </span>
+              </a>
+            </li>
+            <li class="tree-list">
+              <a> Completed Orders</a>
+            </li>
+            <li class="tree-list">
+              <a> Cancelled Orders </a>
+            </li>
+          </ul>
+        </a>
+      </li>
+      <li class="menu-list">
+        <a>
+          <span style="display:flex">
+            <span class="pull-left"> &nbsp; Returns</span>
+          </span>
+        </a>
+      </li>
+      <li class="menu-list">
+        <a class="tree-menus active">
+          <span style="display:flex">
+            <span class="pull-left"> &nbsp; Payments</span>
+          </span>
+          <ul class="tree-view">
+            <li class="tree-list">
+              <a>Next payment</a>
+            </li>
+            <li class="tree-list">
+              <a> Last payment</a>
+            </li>
+            <li class="tree-list">
+              <a>Total outstanding payments </a>
+            </li>
+            <li class="tree-list">
+              <a>Unbilled orders </a>
+            </li>
+          </ul>
+        </a>
+      </li>
+      <li class="menu-list">
+        <a class="tree-menus active">
+          <span style="display:flex">
+            <span class="pull-left"> &nbsp; Promotions</span>
+          </span>
+          <ul class="tree-view">
+            <li class="tree-list">
+              <a>Category</a>
+            </li>
+            <li class="tree-list">
+              <a> Offer validity</a>
+            </li>
+            <li class="tree-list">
+              <a>Promo code </a>
+            </li>
+
+          </ul>
+        </a>
+      </li>
+      <li class="menu-list">
+        <a>
+          <span style="display:flex">
+            <span class="pull-left"> &nbsp;Reports</span>
+          </span>
+
+        </a>
+      </li>
+      <li class="menu-list">
+        <a class="tree-menus active">
+          <span style="display:flex">
+            <span class="pull-left"> &nbsp; Settings </span>
+          </span>
+          <ul class="tree-view">
+            <li class="tree-list">
+              <a> CRM Settings </a>
+            </li>
+          </ul>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="FoodListPage">
+  <div class="pageidendity container-fluid">
+    <div class="row">
+      <div class="col-sm-12 text-right">
+        <p class="idendity">
+          <span class="link">Home</span> / Food List</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <div class="user-account-nav user-account-sidebar">
+          <div class="user-nav-list">
+            <ul>
+              <li class="user_dashboard_ajax active">
+                <a>
+                  <i class="icon-dashboard3"></i> Dashboard</a>
+              </li>
+              <li class="user_dashboard_url">
+                <a>
+                  <i class="icon-building"></i>My Restaurant</a>
+              </li>
+              <li class="user_dashboard_ajax">
+                <a>
+                  <i class="icon-menu5"></i>Menu Builder</a>
+              </li>
+              <li class="user_dashboard_ajax">
+                <a>
+                  <i class="icon-add_shopping_cart"></i>Orders</a>
+              </li>
+              <li class="user_dashboard_ajax">
+                <a>
+                  <i class="icon-file-text2"></i>Bookings</a>
+              </li>
+
+
+              <li class="user_dashboard_ajax">
+                <a>
+                  <i class="icon-comment2"></i>Reviews</a>
+              </li>
+              <li class="user_dashboard_ajax">
+                <a>
+                  <i class="icon-card_membership"></i>Memberships</a>
+              </li>
+
+              <li class="user_dashboard_ajax">
+                <a>
+                  <i class="icon-bill"></i>Withdrawals</a>
+              </li>
+              <li class="user_dashboard_ajax">
+                <a>
+                  <i class="icon-money"></i>Earnings</a>
+              </li>
+              <li class="user_dashboard_ajax">
+                <a>
+                  <i class="icon-file-text22"></i>Statements</a>
+              </li>
+              <li class="user_dashboard_ajax">
+                <a>
+                  <i class="icon-flow-tree"></i>Team Management</a>
+              </li>
+              <li class="user_dashboard_ajax">
+                <a>
+                  <i class="icon-unlock-alt"></i>Change Password</a>
+              </li>
+              <li>
+                <a>
+                  <i class="icon-log-out"></i>Sign out</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+        <div class="FoodsList_Section">
+          <ul class="FoodsList">
+            <li class="FoodItem">
+              <div class="FoodItem_Section">
+                <div class="ImageSection">
+                  <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
+                </div>
+                <div class="Text_Section">
+                  <h6 class="Item-Name"> Chicken Tandoori Special 12" Deep Pan </h6>
+                  <p class="Item-Details"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
+                </div>
+                <div class="Price_Section">
+                  <p class="price"> $39.0</p>
+                </div>
+                <div class="Action_Section">
+                  <i class="material-icons edit"> edit </i>
+                  <i class="material-icons delete"> delete </i>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="FoodsList">
+            <li class="FoodItem">
+              <div class="FoodItem_Section">
+                <div class="ImageSection">
+                  <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
+                </div>
+                <div class="Text_Section">
+                  <h6 class="Item-Name"> Chicken Tandoori Special 12" Deep Pan </h6>
+                  <p class="Item-Details"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
+                </div>
+                <div class="Price_Section">
+                  <p class="price"> $39.0</p>
+                </div>
+                <div class="Action_Section">
+                  <i class="material-icons edit"> edit </i>
+                  <i class="material-icons delete"> delete </i>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="FoodsList">
+            <li class="FoodItem">
+              <div class="FoodItem_Section">
+                <div class="ImageSection">
+                  <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
+                </div>
+                <div class="Text_Section">
+                  <h6 class="Item-Name"> Chicken Tandoori Special 12" Deep Pan </h6>
+                  <p class="Item-Details"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
+                </div>
+                <div class="Price_Section">
+                  <p class="price"> $39.0</p>
+                </div>
+                <div class="Action_Section">
+                  <i class="material-icons edit"> edit </i>
+                  <i class="material-icons delete"> delete </i>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="FoodsList">
+            <li class="FoodItem">
+              <div class="FoodItem_Section">
+                <div class="ImageSection">
+                  <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
+                </div>
+                <div class="Text_Section">
+                  <h6 class="Item-Name"> Chicken Tandoori Special 12" Deep Pan </h6>
+                  <p class="Item-Details"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
+                </div>
+                <div class="Price_Section">
+                  <p class="price"> $39.0</p>
+                </div>
+                <div class="Action_Section">
+                  <i class="material-icons edit"> edit </i>
+                  <i class="material-icons delete"> delete </i>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="FoodsList">
+            <li class="FoodItem">
+              <div class="FoodItem_Section">
+                <div class="ImageSection">
+                  <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
+                </div>
+                <div class="Text_Section">
+                  <h6 class="Item-Name"> Chicken Tandoori Special 12" Deep Pan </h6>
+                  <p class="Item-Details"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
+                </div>
+                <div class="Price_Section">
+                  <p class="price"> $39.0</p>
+                </div>
+                <div class="Action_Section">
+                  <i class="material-icons edit"> edit </i>
+                  <i class="material-icons delete"> delete </i>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="FoodsList">
+            <li class="FoodItem">
+              <div class="FoodItem_Section">
+                <div class="ImageSection">
+                  <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
+                </div>
+                <div class="Text_Section">
+                  <h6 class="Item-Name"> Chicken Tandoori Special 12" Deep Pan </h6>
+                  <p class="Item-Details"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
+                </div>
+                <div class="Price_Section">
+                  <p class="price"> $39.0</p>
+                </div>
+                <div class="Action_Section">
+                  <i class="material-icons edit"> edit </i>
+                  <i class="material-icons delete"> delete </i>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="FoodsList">
+            <li class="FoodItem">
+              <div class="FoodItem_Section">
+                <div class="ImageSection">
+                  <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
+                </div>
+                <div class="Text_Section">
+                  <h6 class="Item-Name"> Chicken Tandoori Special 12" Deep Pan </h6>
+                  <p class="Item-Details"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
+                </div>
+                <div class="Price_Section">
+                  <p class="price"> $39.0</p>
+                </div>
+                <div class="Action_Section">
+                  <i class="material-icons edit"> edit </i>
+                  <i class="material-icons delete"> delete </i>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="quicklinks">
+
+    <p>FAQ</p>
+    <p>Terms&conditions</p>
+    <p>Privacy policy</p>
+    <p>Security details</p>
+    <p>Cancellation</p>
+    <p>Seller support center</p>
+    <p>Contact Customer</p>
+    <p>Help</p>
+
+  </div>
+</div>
