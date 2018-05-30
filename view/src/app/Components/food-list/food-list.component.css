@@ -1,0 +1,140 @@
+
+/* Body Design Css */
+.FoodListPage
+{
+    padding:0;
+    margin:0;
+    background-color:#EBEDF3;
+}
+.user-account-nav.user-account-sidebar {
+    border: 0;
+    background-color: transparent;
+}
+.user-nav-list {
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.user-nav-list ul {
+    padding: 0px;
+    margin: 0px;
+}
+.user-nav-list ul li:first-child {
+    border-top: none;
+}
+.user-nav-list ul li {
+    list-style: none;
+    padding: 15px 20px 12px 20px;
+    margin: 0px;
+    border-top: 1px solid #ebedf3;
+    line-height: 1;
+    box-shadow: none;
+    text-shadow: none;
+    display: block;
+    width: 100%;
+}
+.user-nav-list ul li a {
+    display: block;
+    outline: none;
+    text-decoration: none;
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 12px;
+    color: #2f313a;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.flex-container{
+    background-color: gray;
+    flex-direction:left;
+}
+
+
+
+
+
+
+.FoodsList_Section{
+    background-color: #ffffff;
+    padding:10px;
+}
+.FoodsList_Section .FoodsList{
+    list-style-type: none;
+    padding:6px;
+}
+.FoodsList_Section .FoodsList .FoodItem{
+    border-bottom: 1px solid #dcdcdc;
+}
+.FoodsList_Section .FoodsList .FoodItem .FoodItem_Section{
+    display:flex;
+    width:100%;
+    align-items: center;
+}
+.FoodsList_Section .FoodsList .FoodItem .FoodItem_Section .ImageSection{
+    width: 80px;
+    height: 80px;
+}
+.FoodsList_Section .FoodsList .FoodItem .FoodItem_Section .ImageSection img{
+    max-height: 100%;
+    max-width: 80%;
+}
+.FoodsList_Section .FoodsList .FoodItem .FoodItem_Section .Price_Section .price {
+    width: 180px;
+    padding-left:80px;
+    font-weight:600;
+}
+.FoodsList_Section .FoodsList .FoodItem .FoodItem_Section .Action_Section {
+    width: 100px;
+}
+.Item-Name{
+    font-weight: 700;
+    margin-top: 5px;
+    color: #484848;  
+}
+ h6 {
+    font-size: 1rem;
+}  
+.Item-Details{
+    line-height: 1.5;
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 0.4px;
+}
+.edit{
+    padding:15px;
+    color:blue;
+}
+.delete{
+    color:red;
+}
+.PageIdentity{
+    height:40px;
+    line-height:40px;
+    margin-top:3px;
+    margin-bottom:20px;
+}
+.Identity{
+    font-size:14px;
+    font-family:courier;
+}
+.Identity span{
+    cursor:pointer;
+    color:orangered;
+    font-weight: 600;
+    font-size:16px;
+}
+.Footer{
+    background-color:black;
+    padding:15px;
+}
+.QuickLinks{
+    display:flex;
+    color:white;
+    width:100%;
+    font-size:13px;
+}
+.QuickLinks p{
+    width:12.5%;
+    text-align:center;
+}
+
