@@ -12,6 +12,8 @@ import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app.routing.module';
 
+import { ModalModule } from 'ngx-bootstrap';
+
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { HeaderComponent } from './Components/Common/header/header.component';
 import { OrdersComponent } from './Components/orders/orders.component';
@@ -21,6 +23,8 @@ import { ReportsComponent } from './Components/reports/reports.component';
 import { SettingsComponent } from './Components/settings/settings.component';
 import { PromotionsComponent } from './Components/promotions/promotions.component';
 import { FoodListComponent } from './Components/food-list/food-list.component';
+import { DeleteConfirmationComponent } from './Components/Models/delete-confirmation/delete-confirmation.component';
+import { FoodItemAddComponent } from './Components/Models/food-item-add/food-item-add.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,9 @@ import { FoodListComponent } from './Components/food-list/food-list.component';
     ReportsComponent,
     SettingsComponent,
     PromotionsComponent,
-    FoodListComponent
+    FoodListComponent,
+    DeleteConfirmationComponent,
+    FoodItemAddComponent
   ],
   imports: [
     BrowserModule,
@@ -43,9 +49,11 @@ import { FoodListComponent } from './Components/food-list/food-list.component';
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ModalModule.forRoot()
   ],
   providers: [],
+  entryComponents: [ FoodItemAddComponent, DeleteConfirmationComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,189 +10,125 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <div class="col-sm-2">
         <div class="Left_Section">
           <ul class="List">
-            <li class="Item"> <span> Dashboard </span>  </li>
-            <li class="Item"> <span> My Restaurant </span>  </li>
-            <li class="Item"> <span> Menu Builder </span>  </li>
-            <li class="Item"> <span> Orders </span>  </li>
-            <li class="Item"> <span> Bookings </span>  </li>
-            <li class="Item"> <span> Reviews </span>  </li>
-            <li class="Item"> <span> Memberships </span>  </li>
-            <li class="Item"> <span> Withdrawals </span>  </li>
-            <li class="Item"> <span> Earnings </span>  </li>
-            <li class="Item"> <span> Statements </span>  </li>
-            <li class="Item"> <span> Team Management </span>  </li>
-            <li class="Item"> <span> Change Password </span> </li>
+            <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_1' }" (click)="Active_Tab_Change('Category_1')"> <span> Category_1 </span>  </li>
+            <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_2' }" (click)="Active_Tab_Change('Category_2')"> <span> Category_2 </span>  </li>
+            <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_3' }" (click)="Active_Tab_Change('Category_3')"> <span> Category_3 </span>  </li>
+            <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_4' }" (click)="Active_Tab_Change('Category_4')"> <span> Category_4 </span>  </li>
+            <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_5' }" (click)="Active_Tab_Change('Category_5')"> <span> Category_5 </span>  </li>
+            <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_6' }" (click)="Active_Tab_Change('Category_6')"> <span> Category_6 </span>  </li>
+            <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_7' }" (click)="Active_Tab_Change('Category_7')"> <span> Category_7 </span>  </li>
+            <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_8' }" (click)="Active_Tab_Change('Category_8')"> <span> Category_8 </span>  </li>
+            <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_9' }" (click)="Active_Tab_Change('Category_9')"> <span> Category_9 </span>  </li>
           </ul>
         </div>
       </div>
-      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-        <div class="FoodsList_Section">
-          <ul class="FoodsList">
-            <li class="FoodItem">
-              <div class="FoodItem_Section">
-                <div class="ImageSection">
-                  <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
-                </div>
-                <div class="Text_Section">
-                  <h6 class="Item-Name"> Chicken Tandoori Special 12" Deep Pan </h6>
-                  <p class="Item-Details"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
-                </div>
-                <div class="Price_Section">
-                  <p class="price"> $39.0</p>
-                </div>
-                <div class="Action_Section">
-                  <i class="material-icons edit"> edit </i>
-                  <i class="material-icons delete"> delete </i>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <ul class="FoodsList">
-            <li class="FoodItem">
-              <div class="FoodItem_Section">
-                <div class="ImageSection">
-                  <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
-                </div>
-                <div class="Text_Section">
-                  <h6 class="Item-Name"> Chicken Tandoori Special 12" Deep Pan </h6>
-                  <p class="Item-Details"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
-                </div>
-                <div class="Price_Section">
-                  <p class="price"> $39.0</p>
-                </div>
-                <div class="Action_Section">
-                  <i class="material-icons edit"> edit </i>
-                  <i class="material-icons delete"> delete </i>
+      <div class="col-sm-10">
+        <div class="Right_Section">
+            <div class="row FoodList">
+              <div class="col-sm-6 FoodItem">
+                <div class="Item_Info">
+                  <div class="Image_Section">
+                    <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
+                  </div>
+                  <div class="Text_Section">
+                    <h5 class="Food_Name"> Chicken Tandoori Special 12" Deep Pan </h5>
+                    <p class="Food_Ingredients"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
+                    <h6 class="Price"> $20.00</h6>
+                    <div class="Action_Section">
+                      <span class="delete"> <i class="material-icons delete">delete</i> Delete </span>
+                      <span class="edit"> <i class="material-icons edit">edit</i> Edit </span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </li>
-          </ul>
-          <ul class="FoodsList">
-            <li class="FoodItem">
-              <div class="FoodItem_Section">
-                <div class="ImageSection">
-                  <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
-                </div>
-                <div class="Text_Section">
-                  <h6 class="Item-Name"> Chicken Tandoori Special 12" Deep Pan </h6>
-                  <p class="Item-Details"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
-                </div>
-                <div class="Price_Section">
-                  <p class="price"> $39.0</p>
-                </div>
-                <div class="Action_Section">
-                  <i class="material-icons edit"> edit </i>
-                  <i class="material-icons delete"> delete </i>
+              <div class="col-sm-6 FoodItem">
+                <div class="Item_Info">
+                  <div class="Image_Section">
+                    <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
+                  </div>
+                  <div class="Text_Section">
+                    <h5 class="Food_Name"> Chicken Tandoori Special 12" Deep Pan </h5>
+                    <p class="Food_Ingredients"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
+                    <h6 class="Price"> $20.00</h6>
+                    <div class="Action_Section">
+                      <span class="delete"> <i class="material-icons delete">delete</i> Delete </span>
+                      <span class="edit"> <i class="material-icons edit">edit</i> Edit </span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </li>
-          </ul>
-
-          <ul class="FoodsList">
-            <li class="FoodItem">
-              <div class="FoodItem_Section">
-                <div class="ImageSection">
-                  <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
-                </div>
-                <div class="Text_Section">
-                  <h6 class="Item-Name"> Chicken Tandoori Special 12" Deep Pan </h6>
-                  <p class="Item-Details"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
-                </div>
-                <div class="Price_Section">
-                  <p class="price"> $39.0</p>
-                </div>
-                <div class="Action_Section">
-                  <i class="material-icons edit"> edit </i>
-                  <i class="material-icons delete"> delete </i>
+              <div class="col-sm-6 FoodItem">
+                <div class="Item_Info">
+                  <div class="Image_Section">
+                    <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
+                  </div>
+                  <div class="Text_Section">
+                    <h5 class="Food_Name"> Chicken Tandoori Special 12" Deep Pan </h5>
+                    <p class="Food_Ingredients"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
+                    <h6 class="Price"> $20.00</h6>
+                    <div class="Action_Section">
+                      <span class="delete"> <i class="material-icons delete">delete</i> Delete </span>
+                      <span class="edit"> <i class="material-icons edit">edit</i> Edit </span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </li>
-          </ul>
-          <ul class="FoodsList">
-            <li class="FoodItem">
-              <div class="FoodItem_Section">
-                <div class="ImageSection">
-                  <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
-                </div>
-                <div class="Text_Section">
-                  <h6 class="Item-Name"> Chicken Tandoori Special 12" Deep Pan </h6>
-                  <p class="Item-Details"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
-                </div>
-                <div class="Price_Section">
-                  <p class="price"> $39.0</p>
-                </div>
-                <div class="Action_Section">
-                  <i class="material-icons edit"> edit </i>
-                  <i class="material-icons delete"> delete </i>
+              <div class="col-sm-6 FoodItem">
+                <div class="Item_Info">
+                  <div class="Image_Section">
+                    <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
+                  </div>
+                  <div class="Text_Section">
+                    <h5 class="Food_Name"> Chicken Tandoori Special 12" Deep Pan </h5>
+                    <p class="Food_Ingredients"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
+                    <h6 class="Price"> $20.00</h6>
+                    <div class="Action_Section">
+                      <span class="delete"> <i class="material-icons delete">delete</i> Delete </span>
+                      <span class="edit"> <i class="material-icons edit">edit</i> Edit </span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </li>
-          </ul>
-          <ul class="FoodsList">
-            <li class="FoodItem">
-              <div class="FoodItem_Section">
-                <div class="ImageSection">
-                  <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
-                </div>
-                <div class="Text_Section">
-                  <h6 class="Item-Name"> Chicken Tandoori Special 12" Deep Pan </h6>
-                  <p class="Item-Details"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
-                </div>
-                <div class="Price_Section">
-                  <p class="price"> $39.0</p>
-                </div>
-                <div class="Action_Section">
-                  <i class="material-icons edit"> edit </i>
-                  <i class="material-icons delete"> delete </i>
+              <div class="col-sm-6 FoodItem">
+                <div class="Item_Info">
+                  <div class="Image_Section">
+                    <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
+                  </div>
+                  <div class="Text_Section">
+                    <h5 class="Food_Name"> Chicken Tandoori Special 12" Deep Pan </h5>
+                    <p class="Food_Ingredients"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
+                    <h6 class="Price"> $20.00</h6>
+                    <div class="Action_Section">
+                      <span class="delete"> <i class="material-icons delete">delete</i> Delete </span>
+                      <span class="edit"> <i class="material-icons edit">edit</i> Edit </span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </li>
-          </ul>
-          <ul class="FoodsList">
-            <li class="FoodItem">
-              <div class="FoodItem_Section">
-                <div class="ImageSection">
-                  <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
-                </div>
-                <div class="Text_Section">
-                  <h6 class="Item-Name"> Chicken Tandoori Special 12" Deep Pan </h6>
-                  <p class="Item-Details"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
-                </div>
-                <div class="Price_Section">
-                  <p class="price"> $39.0</p>
-                </div>
-                <div class="Action_Section">
-                  <i class="material-icons edit"> edit </i>
-                  <i class="material-icons delete"> delete </i>
+              <div class="col-sm-6 FoodItem">
+                <div class="Item_Info">
+                  <div class="Image_Section">
+                    <img src="http://foodbakery.chimpgroup.com/wp-content/uploads/cover-photo23-150x150.jpg" alt="">
+                  </div>
+                  <div class="Text_Section">
+                    <h5 class="Food_Name"> Chicken Tandoori Special 12" Deep Pan </h5>
+                    <p class="Food_Ingredients"> Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs </p>
+                    <h6 class="Price"> $20.00</h6>
+                    <div class="Action_Section">
+                      <span class="delete"> <i class="material-icons delete">delete</i> Delete </span>
+                      <span class="edit"> <i class="material-icons edit">edit</i> Edit </span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </li>
-          </ul>
-
-
+            </div>
         </div>
-
       </div>
     </div>
-  </div>
-</div>
-
-<div class="Footer">
-  <div class="QuickLinks">
-
-    <p>FAQ</p>
-    <p>Terms&conditions</p>
-    <p>Privacy policy</p>
-    <p>Security details</p>
-    <p>Cancellation</p>
-    <p>Seller support center</p>
-    <p>Contact Customer</p>
-    <p>Help</p>
-
   </div>
 </div>

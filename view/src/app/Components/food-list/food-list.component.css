@@ -1,10 +1,10 @@
 
 /* Body Design Css */
-.FoodListPage
-{
+.FoodListPage{
     padding:0;
     margin:0;
-    background-color:#EBEDF3;
+    background-color:#f1f1f1;
+    min-height: 700px;
 }
 
 .PageIdentity{
@@ -30,7 +30,6 @@
 
 .Left_Section {
     background-color: #fff;
-    margin-top: 30px;
 }
 .Left_Section .List {
     padding: 0px;
@@ -59,6 +58,92 @@
 .Left_Section .List .Item:hover span {
     color: #08a92c
 }
+.Left_Section .List .Item.active {
+    background-color: #08a92c;
+}
+.Left_Section .List .Item.active span{
+    color: #ffffff;
+}
+
+
+
+
+
+
+.FoodList {
+    padding: 0px 30px;
+}
+.FoodList .FoodItem {
+    min-height: 150px;
+    margin-bottom: 20px;
+}
+.FoodList .FoodItem .Item_Info {
+    background-color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.30);    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+.FoodList .FoodItem .Item_Info .Image_Section {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+.FoodList .FoodItem .Item_Info .Image_Section img {
+    max-width: 100%;
+}
+.FoodList .FoodItem .Item_Info .Text_Section {
+    width: calc(100% - 110px);
+}
+.FoodList .FoodItem .Item_Info .Text_Section .Food_Name {
+    margin: 0px;
+    font-size: 17px;
+    color: #484848;
+}
+.FoodList .FoodItem .Item_Info .Text_Section .Food_Ingredients {
+    margin: 0px;
+    font-size: 13px;
+    color: #888888;
+}
+.FoodList .FoodItem .Item_Info .Text_Section .Price {
+    margin: 0px;
+    font-size: 16px;
+    color: #06a92c;
+}
+.FoodList .FoodItem .Item_Info .Action_Section span {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    padding: 2px 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    float: right;
+    cursor: pointer;
+}
+.FoodList .FoodItem .Item_Info .Action_Section span i {
+    font-size: 17px;
+    margin: 0px 2px;
+}
+.FoodList .FoodItem .Item_Info .Action_Section span.edit {
+    border: 1px solid #00a0ff;
+    color: #00a0ff;
+}
+.FoodList .FoodItem .Item_Info .Action_Section span.delete {
+    border: 1px solid rgb(221, 10, 10);
+    color: rgb(221, 10, 10);
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -85,58 +170,38 @@
 .FoodsList_Section .FoodsList .FoodItem .FoodItem_Section .ImageSection{
     width: 80px;
     height: 80px;
+    display: inline-flex;
+    align-items: center;
 }
 .FoodsList_Section .FoodsList .FoodItem .FoodItem_Section .ImageSection img{
     max-height: 100%;
     max-width: 80%;
+}
+.FoodsList_Section .FoodsList .FoodItem .FoodItem_Section .Text_Section .Item-Name{
+    font-weight: 700;
+    margin-top: 5px;
+    color: #484848;  
+}
+.FoodsList_Section .FoodsList .FoodItem .FoodItem_Section .Text_Section .Item-Details{
+    line-height: 1.5;
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 0.4px;
+    margin-bottom: 0px;
 }
 .FoodsList_Section .FoodsList .FoodItem .FoodItem_Section .Price_Section .price {
     width: 180px;
     padding-left:80px;
     font-weight:600;
 }
-.FoodsList_Section .FoodsList .FoodItem .FoodItem_Section .Action_Section {
-    width: 100px;
+.FoodsList_Section .FoodsList .FoodItem .FoodItem_Section .Action_Section span{
+    cursor: pointer;
 }
-.Item-Name{
-    font-weight: 700;
-    margin-top: 5px;
-    color: #484848;  
-}
- h6 {
-    font-size: 1rem;
-}  
-.Item-Details{
-    line-height: 1.5;
-    margin-bottom: 25px;
-    font-size: 13px;
-    color: #999999;
-    letter-spacing: 0.4px;
-}
-.edit{
+.FoodsList_Section .FoodsList .FoodItem .FoodItem_Section .Action_Section .edit{
     padding:15px;
     color:blue;
 }
-.delete{
+.FoodsList_Section .FoodsList .FoodItem .FoodItem_Section .Action_Section .delete{
     color:red;
 }
-
-
-
-
-
-.Footer{
-    background-color:black;
-    padding:15px;
-}
-.QuickLinks{
-    display:flex;
-    color:white;
-    width:100%;
-    font-size:13px;
-}
-.QuickLinks p{
-    width:12.5%;
-    text-align:center;
-}
-

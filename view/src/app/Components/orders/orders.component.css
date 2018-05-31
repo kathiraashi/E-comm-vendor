@@ -1,7 +1,7 @@
 .Order_Page{
     width: 100%;
     padding: 0px 30px;
-    background-color: #EBEDF3;
+    background-color: #f1f1f1;
     min-height: 700px;
 }
 
@@ -50,8 +50,14 @@
     color: #777777;
     font-weight: 600;
 }
-.Left_Section .List .Item:hover span{
+.Left_Section .List .Item:hover span {
     color: #08a92c
+}
+.Left_Section .List .Item.active {
+    background-color: #08a92c;
+}
+.Left_Section .List .Item.active span{
+    color: #ffffff;
 }
 
 
