@@ -6,22 +6,40 @@
     margin:0;
     background-color:#EBEDF3;
 }
-.user-account-nav.user-account-sidebar {
-    border: 0;
-    background-color: transparent;
+
+.PageIdentity{
+    height:40px;
+    line-height:40px;
+    margin-top:3px;
+    margin-bottom:5px;
 }
-.user-nav-list {
+.PageIdentity .Identity{
+    color: #777777;
+    font-size: 13px;
+    font-weight: 600;
+}
+.PageIdentity .Identity span{
+    cursor: pointer;
+    color: #06a92c;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+
+
+.Left_Section {
     background-color: #fff;
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
-.user-nav-list ul {
+.Left_Section .List {
     padding: 0px;
     margin: 0px;
 }
-.user-nav-list ul li:first-child {
+.Left_Section .List .Item:first-child {
     border-top: none;
 }
-.user-nav-list ul li {
+.Left_Section .List .Item {
     list-style: none;
     padding: 15px 20px 12px 20px;
     margin: 0px;
@@ -31,22 +49,17 @@
     text-shadow: none;
     display: block;
     width: 100%;
+    cursor: pointer;
 }
-.user-nav-list ul li a {
-    display: block;
-    outline: none;
-    text-decoration: none;
-    text-shadow: none;
-    box-shadow: none;
-    font-size: 12px;
-    color: #2f313a;
+.Left_Section .List .Item span {
+    font-size: 15px;
+    color: #777777;
     font-weight: 600;
-    text-transform: uppercase;
 }
-.flex-container{
-    background-color: gray;
-    flex-direction:left;
+.Left_Section .List .Item:hover span {
+    color: #08a92c
 }
+
 
 
 
@@ -107,22 +120,11 @@
 .delete{
     color:red;
 }
-.PageIdentity{
-    height:40px;
-    line-height:40px;
-    margin-top:3px;
-    margin-bottom:20px;
-}
-.Identity{
-    font-size:14px;
-    font-family:courier;
-}
-.Identity span{
-    cursor:pointer;
-    color:orangered;
-    font-weight: 600;
-    font-size:16px;
-}
+
+
+
+
+
 .Footer{
     background-color:black;
     padding:15px;

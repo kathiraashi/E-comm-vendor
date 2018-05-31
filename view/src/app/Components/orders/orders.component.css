@@ -1,0 +1,152 @@
+.Order_Page{
+    width: 100%;
+    padding: 0px 30px;
+    background-color: #EBEDF3;
+    min-height: 700px;
+}
+
+.PageIdentity{
+    height:40px;
+    line-height:40px;
+    margin-top:3px;
+    margin-bottom:5px;
+}
+.PageIdentity .Identity{
+    color: #777777;
+    font-size: 13px;
+    font-weight: 600;
+}
+.PageIdentity .Identity span{
+    cursor: pointer;
+    color: #06a92c;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.Left_Section {
+    background-color: #fff;
+}
+.Left_Section .List {
+    padding: 0px;
+    margin: 0px;
+}
+.Left_Section .List .Item:first-child {
+    border-top: none;
+}
+.Left_Section .List .Item {
+    list-style: none;
+    padding: 15px 20px 12px 20px;
+    margin: 0px;
+    border-top: 1px solid #ebedf3;
+    line-height: 1;
+    box-shadow: none;
+    text-shadow: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+.Left_Section .List .Item span{
+    font-size: 15px;
+    color: #777777;
+    font-weight: 600;
+}
+.Left_Section .List .Item:hover span{
+    color: #08a92c
+}
+
+
+
+
+
+.Table_Section table {
+    border: 1px solid lightgray;
+    width: 100%;
+}
+.Table_Section table thead {
+    border: 1px #08a92c;
+    line-height: 40px;
+    text-align: center;
+    background-color: #06a92c;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.Table_Section table tbody {
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+}
+.Table_Section table tbody tr {
+    line-height: 50px;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+}
+.Table_Section table tbody tr:nth-child(even) {
+    background-color: #f1f1f185;
+}
+.Table_Section table tbody tr:hover {
+    background-color: #4f6a7a40;
+}
+.Table_Section table tbody tr td .S_no {
+    font-size: 14px;
+    color: #777;
+}
+.Table_Section table tbody tr td .Main_Id {
+    font-size: 14px;
+    color: #484848;
+    display: block;
+    font-weight: 700;
+    cursor: pointer;
+}
+.Table_Section table tbody tr td .Date {
+    display: block;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #888888;
+}
+.Table_Section table tbody tr td .Time {
+    display: block;
+    line-height: 16px;
+    font-size: 13px;
+    color: #888888;
+}
+.Table_Section table tbody tr td .Name_Style {
+    color: #888888;
+    font-size: 14px;
+    font-weight: 500;
+}
+.Table_Section table tbody tr td .User_Style {
+    display: block;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #888888;
+}
+.Table_Section table tbody tr td .Price_Tag {
+    font-size: 14px;
+    font-weight: 700;
+    color: #484848;
+}
+.Table_Section table tbody tr td .Status_Tag {
+    padding: 3px 7px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.Table_Section table tbody tr td .Action_Section{
+    color: #ffffff;
+    height: 35px;
+    width: 35px;
+    line-height: 30px;
+    display: flex;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+}
+.Table_Section table tbody tr td .Action_Section i {
+    width: 100%;
+    line-height: 35px;
+}
