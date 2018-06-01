@@ -4,7 +4,7 @@ import { BsModalService } from 'ngx-bootstrap/modal';
 import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 
 import { FoodItemAddComponent } from './../Models/food-item-add/food-item-add.component';
-
+import { FoodItemEditComponent } from './../Models/food-item-edit/food-item-edit.component';
 @Component({
   selector: 'app-food-list',
   templateUrl: './food-list.component.html',
@@ -23,11 +23,18 @@ export class FoodListComponent implements OnInit {
   Active_Tab_Change(name) {
     this.Active_Tab = name;
   }
-  EditFoodItem() {
+  AddFoodItem() {
     const initialState = {
       title: 'Modal with component'
     };
     this.bsModalRef = this.modalService.show(FoodItemAddComponent, {initialState});
   }
+  EditFoodItem() {
+    const initialState = {
+      title: 'Modal with component'
+    };
+    this.bsModalRef = this.modalService.show(FoodItemEditComponent, {initialState});
+  }
+
 
 }

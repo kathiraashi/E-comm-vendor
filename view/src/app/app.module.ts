@@ -25,6 +25,9 @@ import { PromotionsComponent } from './Components/promotions/promotions.componen
 import { FoodListComponent } from './Components/food-list/food-list.component';
 import { DeleteConfirmationComponent } from './Components/Models/delete-confirmation/delete-confirmation.component';
 import { FoodItemAddComponent } from './Components/Models/food-item-add/food-item-add.component';
+import { FoodItemEditComponent } from './Components/Models/food-item-edit/food-item-edit.component';
+
+
 
 @NgModule({
   declarations: [
@@ -39,7 +42,8 @@ import { FoodItemAddComponent } from './Components/Models/food-item-add/food-ite
     PromotionsComponent,
     FoodListComponent,
     DeleteConfirmationComponent,
-    FoodItemAddComponent
+    FoodItemAddComponent,
+    FoodItemEditComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +57,7 @@ import { FoodItemAddComponent } from './Components/Models/food-item-add/food-ite
     ModalModule.forRoot()
   ],
   providers: [],
-  entryComponents: [ FoodItemAddComponent, DeleteConfirmationComponent],
+  entryComponents: [ FoodItemAddComponent, DeleteConfirmationComponent, FoodItemEditComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
