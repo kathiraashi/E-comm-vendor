@@ -1,0 +1,18 @@
+.status-select
+{
+    width:100%;
+    background: #f6f6f6;
+    padding: 8px;
+    border:1px solid #eeeeee;
+}
+.status-lbl
+{
+    font-family: calibri;
+    font-size: 18px;
+    font-weight: 800;
+    padding-top:5px;
+}
+.form-details
+{
+    font-family: calibri;
+}

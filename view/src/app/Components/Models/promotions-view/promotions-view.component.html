@@ -1,0 +1,52 @@
+<div class="modal-content">
+    <div class="modal-header">
+  <h3 style="color:black;">Promotion Details</h3>
+  
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+      </div>
+    
+    <div class="modal-body">
+        <!-- <span class="delete">Get Update </span> -->
+        <form class="form" style="color:black;border-radius:5px;">
+          <div class="row">
+              <div class="col-sm-4 form-group">
+                  <label class="status-lbl">Status </label>
+                </div>
+              <div class="col-sm-8 form-group">                      
+                  <select name="status" class="status-select">
+                    <option>Active</option>
+                    <option>InActive</option>
+                    <option>Expired</option>
+                  </select>
+              </div>
+          </div>
+          
+        </form> 
+        <br>
+        <form class="form" class="form-details" style="color:black;border-radius:5px;">
+            <div class="row">
+                  <div class="col-sm-6 form-group">
+                       <label>Date : May 29,2018</label>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label>Category : Product category</label>
+                     </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                     <label>Offer Validity : Jun 10,2018</label>
+                  </div>
+                  <div class="col-sm-6 form-group">
+                      <label>Status : Active</label>
+                   </div>
+          </div>
+      </form>
+       
+  </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal" (click)="bsModalRef.hide()">Close</button>
+    </div>
+  </div>
+  
