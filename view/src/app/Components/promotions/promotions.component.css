@@ -150,3 +150,46 @@
     width: 100%;
     line-height: 35px;
 }
+.search-bar
+{
+   
+    padding: 3px 15px;
+    margin-left: 30px;
+    width:100%;
+}
+.search-text
+{
+    font-size: 13px;
+    color:#696969;
+    width:100%;
+    padding: 3px;
+    border:none;
+    background: #EBEDF3;
+    border-bottom:1px solid #cccccc;
+    font-size: 14px;
+}
+.add_promotion
+{
+    color:#333333;
+    border:none;
+    padding: 3px 15px;
+}
+.frm-promotion
+{
+    /* margin-left: 30px; */
+    /* margin-right: 20px; */
+}
+.trans-bg
+{
+    background: #EBEDF3;
+}
+.bg-green
+{
+    border: 1px solid #08A92C;
+    background: #EBEDF3;
+    color: #08A92C;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    padding: 3px 15px;
+}

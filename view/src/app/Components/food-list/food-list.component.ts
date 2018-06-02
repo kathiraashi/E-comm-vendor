@@ -33,7 +33,7 @@ export class FoodListComponent implements OnInit {
     const initialState = {
       title: 'Modal with component'
     };
-    this.bsModalRef = this.modalService.show(FoodItemEditComponent, {initialState});
+    this.bsModalRef = this.modalService.show(FoodItemEditComponent,  Object.assign({initialState}, { class: 'modal-lg' }));
   }
 
 
