@@ -5,6 +5,8 @@ import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 
 import { FoodItemAddComponent } from './../Models/food-item-add/food-item-add.component';
 import { FoodItemEditComponent } from './../Models/food-item-edit/food-item-edit.component';
+import { DeleteConfirmationComponent } from './../Models/delete-confirmation/delete-confirmation.component';
+
 @Component({
   selector: 'app-food-list',
   templateUrl: './food-list.component.html',
@@ -27,14 +29,19 @@ export class FoodListComponent implements OnInit {
     const initialState = {
       title: 'Modal with component'
     };
-    this.bsModalRef = this.modalService.show(FoodItemAddComponent, {initialState});
+    this.bsModalRef = this.modalService.show(FoodItemAddComponent, Object.assign({initialState}, { class: 'modal-lg' }));
   }
   EditFoodItem() {
     const initialState = {
       title: 'Modal with component'
     };
-    this.bsModalRef = this.modalService.show(FoodItemEditComponent, {initialState});
+    this.bsModalRef = this.modalService.show(FoodItemEditComponent, Object.assign({initialState}, { class: 'modal-lg' }));
   }
 
-
+  DeleteFoodItem() {
+    const initialState = {
+      title: 'Modal with component'
+    };
+    this.bsModalRef = this.modalService.show(DeleteConfirmationComponent, Object.assign({initialState}, { class: 'modal-sm' }));
+  }
 }

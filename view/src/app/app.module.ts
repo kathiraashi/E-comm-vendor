@@ -26,6 +26,7 @@ import { FoodListComponent } from './Components/food-list/food-list.component';
 import { DeleteConfirmationComponent } from './Components/Models/delete-confirmation/delete-confirmation.component';
 import { FoodItemAddComponent } from './Components/Models/food-item-add/food-item-add.component';
 import { FoodItemEditComponent } from './Components/Models/food-item-edit/food-item-edit.component';
+import { LocationCreateComponent } from './Components/Models/location-create/location-create.component';
 
 
 
@@ -43,7 +44,8 @@ import { FoodItemEditComponent } from './Components/Models/food-item-edit/food-i
     FoodListComponent,
     DeleteConfirmationComponent,
     FoodItemAddComponent,
-    FoodItemEditComponent
+    FoodItemEditComponent,
+    LocationCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +59,12 @@ import { FoodItemEditComponent } from './Components/Models/food-item-edit/food-i
     ModalModule.forRoot()
   ],
   providers: [],
-  entryComponents: [ FoodItemAddComponent, DeleteConfirmationComponent, FoodItemEditComponent],
+  entryComponents: [
+    FoodItemAddComponent,
+    DeleteConfirmationComponent,
+    FoodItemEditComponent,
+    LocationCreateComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -22,6 +22,47 @@
     font-weight: 600;
     font-size: 15px;
 }
+.Create_Button{
+    margin-left: 33px;
+    border-radius: 0px;
+    border: 1px solid #08A92C;
+    color: #08A92C;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    padding: 3px 15px;
+    }
+.Search_Section{
+    position:relative;
+    margin-right: 32px;
+   }
+.Search_Section input{
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    background-color: transparent;
+    padding-left: 5px;
+    height: 35px;
+    color: #484848;
+    font-weight: 500;
+    padding-top: 8px;
+    outline:none;
+}
+.Search_Section input::placeholder{
+    color:#cccccc; 
+    font-weight:400;
+ }
+.Search_Section i{
+    position: absolute;
+    right: 0px;
+    padding: 7px 5px;
+    color: #cccccc;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 
 .Left_Section {
     background-color: #fff;
@@ -149,4 +190,32 @@
 .Table_Section table tbody tr td .Action_Section i {
     width: 100%;
     line-height: 35px;
+}
+.Table_Section table tbody tr td .edit {
+ border:1px solid blue;
+ background-color:#0000ffc4;
+ color:white;
+ height: 35px;
+ width: 35px;
+ line-height: 30px;
+ display: flex;
+ border-radius: 5px;
+ cursor: pointer;
+ float: right;
+ margin-right: 10px; 
+ padding: 3px;
+}
+.Table_Section table tbody tr td .delete{
+    border:1px solid red;
+    background-color:#ff0000bd;
+ color:white;
+ height: 35px;
+ width: 35px;
+ line-height: 30px;
+ display: flex;
+ border-radius: 5px;
+ cursor: pointer;
+ float: right;
+ margin-right: 10px;
+ padding: 3px;
 }

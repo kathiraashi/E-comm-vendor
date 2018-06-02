@@ -1,148 +1,182 @@
 <app-header></app-header>
 
 <div class="Order_Page">
-	<div class="PageIdentity container-fluid">
-		<div class="row">
-			<div class="col-sm-12 text-right">
-				<p class="Identity">
-				<span class="link">Home</span> / Food List</p>
-			</div>
-		</div>
-	</div>
-
-   <div class="row">
-     <div class="col-sm-12">
-         <div class="Table_Section">
-            <table>
-               <thead>
-                  <tr>
-                    <th>S.no</th>
-                     <th>Name</th>
-                     <th>Latitude</th>
-                     <th>longtitude</th>
-                     <th>Address</th>
-                    <th>Delivery Duration</th>
-                     <th>Action</th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-							<td>
-								<span class="S_no"> 1 </span>
-							</td>
-                     <td>
-                        <span class="Main_Id"> Custom location Name </span>
-                     </td>
-                     <td>
-                        <span class="Date"> 36343472346</span>
-                       
-                     </td>
-                     <td> 
-                        <span class="Name_Style">546546567</span> 
-                     </td>
-                     <td>
-                        <span class="User_Style"> 894 W Belmont Ave, Fresno, CALIFORNIA 93728, USA</span>
-                        
-                     </td>
-                     <td>
-                        <span class="Price_Tag"> 4hrs</span>
-                     </td>
-                    
-                     <td>
-                        <span class="Action_Section Bg_Info">
-                           <i class="material-icons"> remove_red_eye </i>
-                        </span>
-                     </td>
-                  </tr>
-                  <tr>
-                      <td>
-                        <span class="S_no"> 2 </span>
-                      </td>
-                             <td>
-                                <span class="Main_Id"> Custom location Name </span>
-                             </td>
-                             <td>
-                                <span class="Date"> 36343472346</span>
-                               
-                             </td>
-                             <td> 
-                                <span class="Name_Style">546546567</span> 
-                             </td>
-                             <td>
-                                <span class="User_Style"> 894 W Belmont Ave, Fresno, CALIFORNIA 93728, USA</span>
-                                
-                             </td>
-                             <td>
-                                <span class="Price_Tag">2hrs</span>
-                             </td>
-                            
-                             <td>
-                                <span class="Action_Section Bg_Info">
-                                   <i class="material-icons"> remove_red_eye </i>
-                                </span>
-                             </td>
-                          </tr>
-                          <tr>
-                              <td>
-                                <span class="S_no"> 3 </span>
-                              </td>
-                                     <td>
-                                        <span class="Main_Id"> Custom location Name </span>
-                                     </td>
-                                     <td>
-                                        <span class="Date"> 36343472346</span>
-                                       
-                                     </td>
-                                     <td> 
-                                        <span class="Name_Style">546546567</span> 
-                                     </td>
-                                     <td>
-                                        <span class="User_Style"> 894 W Belmont Ave, Fresno, CALIFORNIA 93728, USA</span>
-                                        
-                                     </td>
-                                     <td>
-                                        <span class="Price_Tag">1hr</span>
-                                     </td>
-                                    
-                                     <td>
-                                        <span class="Action_Section Bg_Info">
-                                           <i class="material-icons"> remove_red_eye </i>
-                                        </span>
-                                     </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                        <span class="S_no"> 4 </span>
-                                      </td>
-                                             <td>
-                                                <span class="Main_Id"> Custom location Name </span>
-                                             </td>
-                                             <td>
-                                                <span class="Date"> 36343472346</span>
-                                               
-                                             </td>
-                                             <td> 
-                                                <span class="Name_Style">546546567</span> 
-                                             </td>
-                                             <td>
-                                                <span class="User_Style">894 W Belmont Ave, Fresno, CALIFORNIA 93728, USA</span>
-                                                
-                                             </td>
-                                             <td>
-                                                <span class="Price_Tag"> 4hrs</span>
-                                             </td>
-                                            
-                                             <td>
-                                                <span class="Action_Section Bg_Info">
-                                                   <i class="material-icons"> remove_red_eye </i>
-                                                </span>
-                                             </td>
-                                          </tr>
-               </tbody>
-            </table>
-         </div>
+  <div class="PageIdentity container-fluid">
+    <div class="row">
+      <div class="col-sm-12 text-right">
+        <p class="Identity">
+          <span class="link">Home</span> / Food List</p>
       </div>
-   </div>
-</div>
+    </div>
+  </div>
+  <div class="">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-6">
+            <span class="Create_Button" (click)="createlocation()">Add Item</span>
+          </div>
+          <div class="col-sm-6">
+            <div class="Search_Section">
+              <input type="text" placeholder="Search.." name="search">
+              <i class="material-icons">search</i>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="Table_Section">
+          <table>
+            <thead>
+              <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Latitude</th>
+                <th>longtitude</th>
+                <th>Address</th>
+                <th>Delivery Duration</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="S_no"> 1 </span>
+                </td>
+                <td>
+                  <span class="Main_Id"> Custom location Name </span>
+                </td>
+                <td>
+                  <span class="Date"> 36343472346</span>
 
+                </td>
+                <td>
+                  <span class="Name_Style">546546567</span>
+                </td>
+                <td>
+                  <span class="User_Style"> 894 W Belmont Ave, Fresno, CALIFORNIA 93728, USA</span>
 
+                </td>
+                <td>
+                  <span class="Price_Tag"> 4hrs</span>
+                </td>
+
+                <td>
+                  <span class="Action_Section Bg_Danger">
+                    <i class="material-icons">delete</i>
+                  </span>
+                  <span class="Action_Section Bg_Info">
+                    <i class="material-icons">edit</i>
+                  </span>
+                  <span class="Action_Section Bg_Success">
+                    <i class="material-icons"> remove_red_eye </i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="S_no"> 2 </span>
+                </td>
+                <td>
+                  <span class="Main_Id"> Custom location Name </span>
+                </td>
+                <td>
+                  <span class="Date"> 36343472346</span>
+
+                </td>
+                <td>
+                  <span class="Name_Style">546546567</span>
+                </td>
+                <td>
+                  <span class="User_Style"> 894 W Belmont Ave, Fresno, CALIFORNIA 93728, USA</span>
+
+                </td>
+                <td>
+                  <span class="Price_Tag">2hrs</span>
+                </td>
+
+                <td>
+                    <span class="Action_Section Bg_Danger">
+                        <i class="material-icons">delete</i>
+                      </span>
+                      <span class="Action_Section Bg_Info">
+                        <i class="material-icons">edit</i>
+                      </span>
+                      <span class="Action_Section Bg_Success">
+                        <i class="material-icons"> remove_red_eye </i>
+                      </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="S_no"> 3 </span>
+                </td>
+                <td>
+                  <span class="Main_Id"> Custom location Name </span>
+                </td>
+                <td>
+                  <span class="Date"> 36343472346</span>
+
+                </td>
+                <td>
+                  <span class="Name_Style">546546567</span>
+                </td>
+                <td>
+                  <span class="User_Style"> 894 W Belmont Ave, Fresno, CALIFORNIA 93728, USA</span>
+
+                </td>
+                <td>
+                  <span class="Price_Tag">1hr</span>
+                </td>
+
+                <td>
+                    <span class="Action_Section Bg_Danger">
+                        <i class="material-icons">delete</i>
+                      </span>
+                      <span class="Action_Section Bg_Info">
+                        <i class="material-icons">edit</i>
+                      </span>
+                      <span class="Action_Section Bg_Success">
+                        <i class="material-icons"> remove_red_eye </i>
+                      </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="S_no"> 4 </span>
+                </td>
+                <td>
+                  <span class="Main_Id"> Custom location Name </span>
+                </td>
+                <td>
+                  <span class="Date"> 36343472346</span>
+
+                </td>
+                <td>
+                  <span class="Name_Style">546546567</span>
+                </td>
+                <td>
+                  <span class="User_Style">894 W Belmont Ave, Fresno, CALIFORNIA 93728, USA</span>
+
+                </td>
+                <td>
+                  <span class="Price_Tag"> 4hrs</span>
+                </td>
+
+                <td>
+                    <span class="Action_Section Bg_Danger">
+                        <i class="material-icons">delete</i>
+                      </span>
+                      <span class="Action_Section Bg_Info">
+                        <i class="material-icons">edit</i>
+                      </span>
+                      <span class="Action_Section Bg_Success">
+                        <i class="material-icons"> remove_red_eye </i>
+                      </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
+
 @Component({
   selector: 'app-delete-confirmation',
   templateUrl: './delete-confirmation.component.html',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeleteConfirmationComponent implements OnInit {
 
-  constructor() { }
+  constructor(public bsModalRef: BsModalRef) { }
 
   ngOnInit() {
   }
