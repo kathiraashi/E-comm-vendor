@@ -45,108 +45,36 @@
     width: 100%;
     cursor: pointer;
 }
-.Left_Section .List .Item span{
+.Left_Section .List .Item span {
     font-size: 15px;
     color: #777777;
     font-weight: 600;
 }
-.Left_Section .List .Item:hover span{
+.Left_Section .List .Item:hover span {
     color: #08a92c
 }
-
-
-
-
-
-.Table_Section table {
-    border: 1px solid lightgray;
-    width: 100%;
+.Left_Section .List .Item.active {
+    background-color: #08a92c;
 }
-.Table_Section table thead {
-    border: 1px #08a92c;
-    line-height: 40px;
-    text-align: center;
-    background-color: #06a92c;
-    color: #ffffff;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-}
-.Table_Section table tbody {
-    border: 1px solid #e8e8e8;
-    background-color: #ffffff;
-}
-.Table_Section table tbody tr {
-    line-height: 50px;
-    text-align: center;
-    align-items: center;
-    border-bottom: 1px solid #eaeaea;
-}
-.Table_Section table tbody tr:nth-child(even) {
-    background-color: #f1f1f185;
-}
-.Table_Section table tbody tr:hover {
-    background-color: #4f6a7a40;
-}
-.Table_Section table tbody tr td .S_no {
-    font-size: 14px;
-    color: #777;
-}
-.Table_Section table tbody tr td .Main_Id {
-    font-size: 14px;
-    color: #484848;
-    display: block;
-    font-weight: 700;
-    cursor: pointer;
-}
-.Table_Section table tbody tr td .Date {
-    display: block;
-    line-height: 16px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #888888;
-}
-.Table_Section table tbody tr td .Time {
-    display: block;
-    line-height: 16px;
-    font-size: 13px;
-    color: #888888;
-}
-.Table_Section table tbody tr td .Name_Style {
-    color: #888888;
-    font-size: 14px;
-    font-weight: 500;
-}
-.Table_Section table tbody tr td .User_Style {
-    display: block;
-    line-height: 18px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #888888;
-}
-.Table_Section table tbody tr td .Price_Tag {
-    font-size: 14px;
-    font-weight: 700;
-    color: #484848;
-}
-.Table_Section table tbody tr td .Status_Tag {
-    padding: 3px 7px;
-    border-radius: 2px;
-    font-size: 14px;
-    font-weight: 600;
+.Left_Section .List .Item.active span{
     color: #ffffff;
 }
-.Table_Section table tbody tr td .Action_Section{
-    color: #ffffff;
-    height: 35px;
-    width: 35px;
-    line-height: 30px;
-    display: flex;
-    border-radius: 5px;
-    cursor: pointer;
-    float: right;
-    margin-right: 10px;
+
+
+
+.form_Section{
+    background-color:white;
+    border-radius:5px;
+    padding:20px;
+    height:100%;
+    width:80%;
 }
-.Table_Section table tbody tr td .Action_Section i {
-    width: 100%;
-    line-height: 35px;
+.form_Section input[type="text"]{
+    width:100%;
+    height:40px;
+    border-radius:5px;
+    border:1px solid #f1f1f1;
+    outline:none;
+    padding:5px;
+    
 }

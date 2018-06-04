@@ -29,6 +29,7 @@ import { FoodItemEditComponent } from './Components/Models/food-item-edit/food-i
 import { LocationCreateComponent } from './Components/Models/location-create/location-create.component';
 import { OrderViewComponent } from './Components/Models/order-view/order-view.component';
 import { PromotionsViewComponent } from './Components/Models/promotions-view/promotions-view.component';
+import { PromotionsModelComponent } from './Components/Models/promotions-model/promotions-model.component';
 
 
 
@@ -49,7 +50,8 @@ import { PromotionsViewComponent } from './Components/Models/promotions-view/pro
     FoodItemEditComponent,
     LocationCreateComponent,
     OrderViewComponent,
-    PromotionsViewComponent
+    PromotionsViewComponent,
+    PromotionsModelComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +71,8 @@ import { PromotionsViewComponent } from './Components/Models/promotions-view/pro
     FoodItemEditComponent,
     LocationCreateComponent,
     OrderViewComponent,
-    PromotionsViewComponent
+    PromotionsViewComponent,
+    PromotionsModelComponent
   ],
   bootstrap: [AppComponent]
 })

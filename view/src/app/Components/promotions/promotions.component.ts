@@ -7,6 +7,7 @@ import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 
 import { BsModalService } from 'ngx-bootstrap/modal';
 import { PromotionsViewComponent } from '../Models/promotions-view/promotions-view.component';
+import { PromotionsModelComponent } from '../Models/promotions-model/promotions-model.component';
 @Component({
   selector: 'app-promotions',
   templateUrl: './promotions.component.html',
@@ -28,6 +29,12 @@ export class PromotionsComponent implements OnInit {
       title: 'Modal with component'
     };
     this.bsModalRef = this.modalService.show(PromotionsViewComponent,  Object.assign({popupMiddleSize}, { class: 'modal-lg' }));
+  }
+  PromotionModel() {
+    const popupMiddleSize = {
+      title: 'Modal with component'
+    };
+    this.bsModalRef = this.modalService.show(PromotionsModelComponent,  Object.assign({popupMiddleSize}, { class: 'modal-lg' }));
   }
 
 }

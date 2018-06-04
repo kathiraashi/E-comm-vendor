@@ -45,13 +45,13 @@
     width: 100%;
     cursor: pointer;
 }
-.Left_Section .List .Item span{
+.Left_Section .List .Item span {
     font-size: 15px;
     color: #777777;
     font-weight: 600;
 }
 .Left_Section .List .Item:hover span {
-    color: #08a92c;
+    color: #08a92c
 }
 .Left_Section .List .Item.active {
     background-color: #08a92c;

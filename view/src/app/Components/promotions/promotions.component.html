@@ -15,9 +15,9 @@
           <div class="Left_Section">
             <ul class="List">
               <li class="Item" [ngClass]="{'active': Active_Tab === 'dashboard' }" (click)="Active_Tab_Change('dashboard')"> <span> Dashboard </span>  </li>
-              <li class="Item" [ngClass]="{'active': Active_Tab === 'Promocode' }" (click)="Active_Tab_Change('Category_2')"> <span> Promocode</span>  </li>
-              <li class="Item" [ngClass]="{'active': Active_Tab === 'Offer' }" (click)="Active_Tab_Change('Category_3')"> <span> Offer </span>  </li>
-              <li class="Item" [ngClass]="{'active': Active_Tab === 'Giftcards' }" (click)="Active_Tab_Change('Category_4')"> <span> Giftcards</span>  </li>
+              <li class="Item" [ngClass]="{'active': Active_Tab === 'Promocode' }" (click)="Active_Tab_Change('Promocode')"> <span> Promocode</span>  </li>
+              <li class="Item" [ngClass]="{'active': Active_Tab === 'Offer' }" (click)="Active_Tab_Change('Offer')"> <span> Offer </span>  </li>
+              <li class="Item" [ngClass]="{'active': Active_Tab === 'Giftcards' }" (click)="Active_Tab_Change('Giftcards')"> <span> Giftcards</span>  </li>
              </ul>
           </div>
         </div>
@@ -25,7 +25,7 @@
           <form class="form frm-promotion" style="color:black;border-radius:5px;">
               <div class="row">
                   <div class="col-sm-6">
-                    <button name="add_promotion" class="bg-green add_promotion">Add New</button>
+                    <button name="add_promotion" class="bg-green add_promotion" (click)="PromotionModel()">Add New</button>
                   </div>
                   <div class="col-sm-6">
                       <div class="Search_Section">
@@ -78,7 +78,7 @@
                               <i class="material-icons">edit</i>
                             </span>
                             <span class="Action_Section Bg_Success">
-                              <i class="material-icons"> remove_red_eye </i>
+                              <i class="material-icons" (click)="ViewPromotion()"> remove_red_eye </i>
                             </span>
                          
                      </td>
