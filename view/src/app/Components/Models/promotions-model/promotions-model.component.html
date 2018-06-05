@@ -1,0 +1,39 @@
+<div class="modal-content">
+  <div class="modal-header">
+<p style="color:black;">Edit Your Profile</p>
+<button data-dismiss="modal" (click)="bsModalRef.hide()">&times;</button>
+    </div>
+  <div class="modal-body">
+      <div class="image">
+      <img src="assets/images/basic/4.jpg">
+      </div>
+      <br>
+      <span class="delete">Upload File </span>
+      <br><br>
+    <form class="form" style="color:black;border-radius:5px;">
+      <div class="row">
+              <div class="col-sm-6 form-group">
+                  <input  name="name" type="text" placeholder="Name..">
+              </div>
+              <div class="col-sm-6 form-group">
+                  <input name="price" type="text"  placeholder="Price..">
+              </div><br>
+              <div class="col-sm-6 form-group" >
+                  <input name="category" type="text" placeholder="Category..">
+              </div>
+              <div class="col-sm-6 form-group" >
+                  <input  name="status" type="text" placeholder="Status.." >
+              </div>
+              </div>
+              <div class="row">
+        <div class="col-sm-12 form-group">
+                  <textarea class="message" rows="5" cols="70" placeholder="Message.."></textarea>
+              </div>
+              </div>
+         
+  </form> 
+</div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal" (click)="bsModalRef.hide()" >Close</button>
+  </div>
+</div>

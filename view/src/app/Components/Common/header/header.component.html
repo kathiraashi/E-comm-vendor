@@ -4,7 +4,7 @@
       <img src="assets/images/basic/logo.png" alt="Logo" class="header-logo">
       <div class="logout">
         <h5>
-          <a> Logout </a>
+          <a [routerLink]="['/login-page']"> Logout </a>
         </h5>
        
       </div>
@@ -52,6 +52,12 @@
             <span class="pull-left"> &nbsp; Config </span>
           </a>
         </li>
+        <li class="menu-list">
+          <a [routerLink]="['']">
+            <span class="pull-left"> &nbsp; Reviews </span>
+          </a>
+        </li>
+
       </ul>
     </div>
   </div>

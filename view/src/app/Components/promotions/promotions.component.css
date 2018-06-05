@@ -45,15 +45,20 @@
     width: 100%;
     cursor: pointer;
 }
-.Left_Section .List .Item span{
+.Left_Section .List .Item span {
     font-size: 15px;
     color: #777777;
     font-weight: 600;
 }
-.Left_Section .List .Item:hover span{
+.Left_Section .List .Item:hover span {
     color: #08a92c
 }
-
+.Left_Section .List .Item.active {
+    background-color: #08a92c;
+}
+.Left_Section .List .Item.active span{
+    color: #ffffff;
+}
 
 
 
@@ -150,34 +155,41 @@
     width: 100%;
     line-height: 35px;
 }
-.search-bar
-{
-   
-    padding: 3px 15px;
-    margin-left: 30px;
-    width:100%;
+.Search_Section{
+    position:relative;
+    margin-right: 32px;
+    background-color: #ffffff;
+   }
+.Search_Section input{
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    background-color: transparent;
+    padding-left: 5px;
+    height: 35px;
+    color: #484848;
+    font-weight: 500;
+    padding-top: 8px;
+    outline:none;
 }
-.search-text
-{
-    font-size: 13px;
-    color:#696969;
-    width:100%;
-    padding: 3px;
-    border:none;
-    background: #EBEDF3;
-    border-bottom:1px solid #cccccc;
-    font-size: 14px;
+.Search_Section input::placeholder{
+    color:#cccccc; 
+    font-weight:400;
+ }
+.Search_Section i{
+    position: absolute;
+    right: 0px;
+    padding: 7px 5px;
+    color: #cccccc;
+    font-weight: 600;
+    cursor: pointer;
 }
 .add_promotion
 {
     color:#333333;
     border:none;
     padding: 3px 15px;
-}
-.frm-promotion
-{
-    /* margin-left: 30px; */
-    /* margin-right: 20px; */
 }
 .trans-bg
 {

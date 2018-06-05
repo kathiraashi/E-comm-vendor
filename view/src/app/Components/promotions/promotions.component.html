@@ -5,42 +5,38 @@
 		<div class="row">
 			<div class="col-sm-12 text-right">
 				<p class="Identity">
-				<span class="link">Home</span> / Promotions</p>
+				<span class="link">Home</span> / Promlotions</p>
 			</div>
 		</div>
 	</div>
 
    <div class="row">
       <div class="col-sm-2">
-          <div class="Left_Section trans-bg">
-            <h4>Filters</h4>
-              <form>
-                <div class="col-sm-12">
-                  <input type="checkbox" name="category-name" value="category" /> Category
-                </div>
-                <div class="col-sm-12">
-                  <input type="checkbox" name="category-name" value="category" /> Validity
-                </div>
-                <div class="col-sm-12">
-                  <input type="checkbox" name="category-name" value="category" /> Status
-                </div>
-              </form>
+          <div class="Left_Section">
+            <ul class="List">
+              <li class="Item" [ngClass]="{'active': Active_Tab === 'dashboard' }" (click)="Active_Tab_Change('dashboard')"> <span> Dashboard </span>  </li>
+              <li class="Item" [ngClass]="{'active': Active_Tab === 'Promocode' }" (click)="Active_Tab_Change('Promocode')"> <span> Promocode</span>  </li>
+              <li class="Item" [ngClass]="{'active': Active_Tab === 'Offer' }" (click)="Active_Tab_Change('Offer')"> <span> Offer </span>  </li>
+              <li class="Item" [ngClass]="{'active': Active_Tab === 'Giftcards' }" (click)="Active_Tab_Change('Giftcards')"> <span> Giftcards</span>  </li>
+             </ul>
           </div>
         </div>
       <div class="col-sm-10">
           <form class="form frm-promotion" style="color:black;border-radius:5px;">
               <div class="row">
-                  <div class="col-sm-5">
-                    <button name="add_promotion" class="bg-green add_promotion">Add New</button>
+                  <div class="col-sm-6">
+                    <button name="add_promotion" class="bg-green add_promotion" (click)="PromotionModel()">Add New</button>
                   </div>
-                  <div class="col-sm-6 form-group search-bar">
-                      <input type="text" placeholder="Search" class="search-text">
-                      
+                  <div class="col-sm-6">
+                      <div class="Search_Section">
+                        <input type="text" placeholder="Search.." name="search">
+                        <i class="material-icons">search</i>
+                      </div>
                     </div>
               </div>
-          </form>
+          </form><br>
          <div class="Table_Section">
-            <table>
+            <table >
                <thead>
                   <tr>
                      <th>S.no</th>
@@ -74,9 +70,17 @@
                         <span class="Status_Tag Bg_Success"> Active </span>
                      </td>
                      <td>
-                        <span class="Action_Section Bg_Info" (click)="ViewPromotion()">
-                           <i class="material-icons"> remove_red_eye </i>
-                        </span>
+                        
+                            <span class="Action_Section Bg_Danger">
+                              <i class="material-icons">delete</i>
+                            </span>
+                            <span class="Action_Section Bg_Info">
+                              <i class="material-icons">edit</i>
+                            </span>
+                            <span class="Action_Section Bg_Success">
+                              <i class="material-icons" (click)="ViewPromotion()"> remove_red_eye </i>
+                            </span>
+                         
                      </td>
                   </tr>
                   <tr>
@@ -100,9 +104,17 @@
                           <span class="Status_Tag Bg_warning"> InActive </span>
                        </td>
                        <td>
-                          <span class="Action_Section Bg_Info">
-                             <i class="material-icons"> remove_red_eye </i>
-                          </span>
+                        
+                              <span class="Action_Section Bg_Danger">
+                                <i class="material-icons">delete</i>
+                              </span>
+                              <span class="Action_Section Bg_Info">
+                                <i class="material-icons">edit</i>
+                              </span>
+                              <span class="Action_Section Bg_Success">
+                                <i class="material-icons"> remove_red_eye </i>
+                              </span>
+                            
                        </td>
                     </tr>
                     <tr>
@@ -126,9 +138,17 @@
                             <span class="Status_Tag Bg_Danger"> Expired </span>
                          </td>
                          <td>
-                            <span class="Action_Section Bg_Info">
-                               <i class="material-icons"> remove_red_eye </i>
-                            </span>
+                            
+                                <span class="Action_Section Bg_Danger">
+                                  <i class="material-icons">delete</i>
+                                </span>
+                                <span class="Action_Section Bg_Info">
+                                  <i class="material-icons">edit</i>
+                                </span>
+                                <span class="Action_Section Bg_Success">
+                                  <i class="material-icons"> remove_red_eye </i>
+                                </span>
+                              
                          </td>
                       </tr>
                       <tr>
@@ -152,9 +172,17 @@
                               <span class="Status_Tag Bg_Success"> Active </span>
                            </td>
                            <td>
-                              <span class="Action_Section Bg_Info">
-                                 <i class="material-icons"> remove_red_eye </i>
-                              </span>
+                             
+                                  <span class="Action_Section Bg_Danger">
+                                    <i class="material-icons">delete</i>
+                                  </span>
+                                  <span class="Action_Section Bg_Info">
+                                    <i class="material-icons">edit</i>
+                                  </span>
+                                  <span class="Action_Section Bg_Success">
+                                    <i class="material-icons"> remove_red_eye </i>
+                                  </span>
+                               
                            </td>
                         </tr>
                </tbody>
