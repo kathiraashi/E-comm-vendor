@@ -19,6 +19,7 @@ import { ReportsComponent } from './Components/reports/reports.component';
 import { SettingsComponent } from './Components/settings/settings.component';
 import { PromotionsComponent } from './Components/promotions/promotions.component';
 import { FoodListComponent } from './Components/food-list/food-list.component';
+import { LoginPageComponent } from './Components/login-page/login-page.component';
 
 const appRoutes: Routes = [
     { path: '',
@@ -73,6 +74,12 @@ const appRoutes: Routes = [
         component: SettingsComponent,
         data: {
             animation: { value: 'Settings', }
+        }
+    },
+    { path: 'login-page',
+        component: LoginPageComponent,
+        data: {
+            animation: { value: 'login-page', }
         }
     }
 ];

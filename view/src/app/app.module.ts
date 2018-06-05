@@ -30,6 +30,7 @@ import { LocationCreateComponent } from './Components/Models/location-create/loc
 import { OrderViewComponent } from './Components/Models/order-view/order-view.component';
 import { PromotionsViewComponent } from './Components/Models/promotions-view/promotions-view.component';
 import { PromotionsModelComponent } from './Components/Models/promotions-model/promotions-model.component';
+import { LoginPageComponent } from './Components/login-page/login-page.component';
 
 
 
@@ -51,7 +52,8 @@ import { PromotionsModelComponent } from './Components/Models/promotions-model/p
     LocationCreateComponent,
     OrderViewComponent,
     PromotionsViewComponent,
-    PromotionsModelComponent
+    PromotionsModelComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
