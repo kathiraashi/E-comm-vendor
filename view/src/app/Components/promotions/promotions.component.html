@@ -4,8 +4,7 @@
 	<div class="PageIdentity container-fluid">
 		<div class="row">
 			<div class="col-sm-12 text-right">
-				<p class="Identity">
-				<span class="link">Home</span> / Promlotions</p>
+				<p class="Identity"> Promotions</p>
 			</div>
 		</div>
 	</div>
@@ -14,36 +13,34 @@
       <div class="col-sm-2">
           <div class="Left_Section">
             <ul class="List">
-              <li class="Item" [ngClass]="{'active': Active_Tab === 'dashboard' }" (click)="Active_Tab_Change('dashboard')"> <span> Dashboard </span>  </li>
-              <li class="Item" [ngClass]="{'active': Active_Tab === 'Promocode' }" (click)="Active_Tab_Change('Promocode')"> <span> Promocode</span>  </li>
-              <li class="Item" [ngClass]="{'active': Active_Tab === 'Offer' }" (click)="Active_Tab_Change('Offer')"> <span> Offer </span>  </li>
-              <li class="Item" [ngClass]="{'active': Active_Tab === 'Giftcards' }" (click)="Active_Tab_Change('Giftcards')"> <span> Giftcards</span>  </li>
+              <li class="Item" [ngClass]="{'active': Active_Tab === 'PromoCodes' }" (click)="Active_Tab_Change('PromoCodes')"> <span> Promo Codes </span>  </li>
+              <!-- <li class="Item" [ngClass]="{'active': Active_Tab === 'Offers' }" (click)="Active_Tab_Change('Offers')"> <span> Offers </span>  </li> -->
              </ul>
           </div>
         </div>
       <div class="col-sm-10">
-          <form class="form frm-promotion" style="color:black;border-radius:5px;">
-              <div class="row">
-                  <div class="col-sm-6">
-                    <button name="add_promotion" class="bg-green add_promotion" (click)="PromotionModel()">Add New</button>
-                  </div>
-                  <div class="col-sm-6">
-                      <div class="Search_Section">
-                        <input type="text" placeholder="Search.." name="search">
-                        <i class="material-icons">search</i>
-                      </div>
-                    </div>
+          <div class="row">
+              <div class="col-sm-6">
+                <button class=" Create_Btn" (click)="PromotionAdd()">Create New</button>
               </div>
-          </form><br>
+              <div class="col-sm-6">
+                  <div class="Search_Section">
+                    <input type="text" placeholder="Search..">
+                    <i class="material-icons">search</i>
+                  </div>
+                </div>
+          </div>
+          <br>
          <div class="Table_Section">
             <table >
                <thead>
                   <tr>
                      <th>S.no</th>
-                     <th>Date</th>
-                     <th>Category </th>
+                     <th>Promo Name </th>
                      <th>Promo Code</th>
-                     <th>Validity</th>                     
+                     <th>Validity</th>
+                     <th> Min Order Value</th> 
+                     <th>Discount Type</th>                
                      <th>Status</th>
                      <th>Action</th>
                   </tr>
@@ -52,30 +49,32 @@
                   <tr>
                     <td>
                       <span class="S_no"> 1 </span>
-                    </td>                     
-                     <td>
-                        <span class="Date"> May 29,2018 </span>
-                        
-                     </td>
+                    </td>
                      <td> 
-                        <span class="Name_Style"> Product Category Name </span> 
+                        <span class="Name_Style"> Promo Name 1 </span> 
                      </td>
                      <td>
-                        <span class="User_Style"> CODE005 </span>
+                        <span class="User_Style"> #CODE1234 </span>
                      </td>
                     <td>
-                      <span class="Date">Jun 10,2018 </span>
+                      <span class="Date"> Jun 10,2018 to Jun 30,2018 </span>
                     </td>
+                    <td>
+                        <span class="Date"> $20 </span>
+                     </td>
+                    <td>
+                     <span class="Date"> Flat </span>
+                     </td>
                      <td>
                         <span class="Status_Tag Bg_Success"> Active </span>
                      </td>
                      <td>
                         
                             <span class="Action_Section Bg_Danger">
-                              <i class="material-icons">delete</i>
+                              <i class="material-icons" (click)="DeletePromotion()">delete</i>
                             </span>
                             <span class="Action_Section Bg_Info">
-                              <i class="material-icons">edit</i>
+                              <i class="material-icons" (click)="PromotionEdit()"> edit </i>
                             </span>
                             <span class="Action_Section Bg_Success">
                               <i class="material-icons" (click)="ViewPromotion()"> remove_red_eye </i>
@@ -86,33 +85,35 @@
                   <tr>
                       <td>
                         <span class="S_no"> 2 </span>
-                      </td>                     
-                       <td>
-                          <span class="Date"> May 29,2018 </span>
-                         
-                       </td>
+                      </td>
                        <td> 
-                          <span class="Name_Style"> Product Category Name </span> 
+                          <span class="Name_Style"> Promo Name 2 </span> 
                        </td>
                        <td>
                           <span class="User_Style"> CODE006 </span>
                        </td>
                       <td>
-                        <span class="Date">Jun 5,2018 </span>
+                        <span class="Date">Jun 5,2018 to Jun 30,2018 </span>
                       </td>
+                      <td>
+                           <span class="Date"> $50 </span>
+                        </td>
+                      <td>
+                           <span class="Date"> Discount </span>
+                        </td>
                        <td>
                           <span class="Status_Tag Bg_warning"> InActive </span>
                        </td>
                        <td>
                         
                               <span class="Action_Section Bg_Danger">
-                                <i class="material-icons">delete</i>
+                                <i class="material-icons" (click)="DeletePromotion()">delete</i>
                               </span>
                               <span class="Action_Section Bg_Info">
-                                <i class="material-icons">edit</i>
+                                <i class="material-icons" (click)="PromotionEdit()" >edit</i>
                               </span>
                               <span class="Action_Section Bg_Success">
-                                <i class="material-icons"> remove_red_eye </i>
+                                <i class="material-icons" (click)="ViewPromotion()"> remove_red_eye </i>
                               </span>
                             
                        </td>
@@ -120,19 +121,21 @@
                     <tr>
                         <td>
                           <span class="S_no"> 3 </span>
-                        </td>                     
-                         <td>
-                            <span class="Date"> May 29,2018 </span>
-                            
-                         </td>
+                        </td>
                          <td> 
-                            <span class="Name_Style"> Product Category Name </span> 
+                            <span class="Name_Style"> Promo Name 3 </span> 
                          </td>
                          <td>
                             <span class="User_Style"> CODE004 </span>
                          </td>
                         <td>
-                          <span class="Date">May 25,2018 </span>
+                          <span class="Date">May 25,2018 to Jun 30,2018 </span>
+                        </td>
+                        <td>
+                              <span class="Date"> $70 </span>
+                           </td>
+                        <td>
+                              <span class="Date"> Flat </span>
                         </td>
                          <td>
                             <span class="Status_Tag Bg_Danger"> Expired </span>
@@ -140,13 +143,13 @@
                          <td>
                             
                                 <span class="Action_Section Bg_Danger">
-                                  <i class="material-icons">delete</i>
+                                  <i class="material-icons" (click)="DeletePromotion()">delete</i>
                                 </span>
                                 <span class="Action_Section Bg_Info">
-                                  <i class="material-icons">edit</i>
+                                  <i class="material-icons" (click)="PromotionEdit()" >edit</i>
                                 </span>
                                 <span class="Action_Section Bg_Success">
-                                  <i class="material-icons"> remove_red_eye </i>
+                                  <i class="material-icons" (click)="ViewPromotion()"> remove_red_eye </i>
                                 </span>
                               
                          </td>
@@ -154,34 +157,35 @@
                       <tr>
                           <td>
                             <span class="S_no"> 4 </span>
-                          </td>                     
-                           <td>
-                              <span class="Date"> May 29,2018 </span>
-                              
-                           </td>
+                          </td>
                            <td> 
-                              <span class="Name_Style"> Product Category Name </span> 
+                              <span class="Name_Style"> Promo Name 4 </span> 
                            </td>
                            <td>
                               <span class="User_Style"> CODE008 </span>
                            </td>
                           <td>
-                            <span class="Date">Jun 10,2018 </span>
+                            <span class="Date">Jun 10,2018 to Jun 30,2018 </span>
                           </td>
+                          <td>
+                              <span class="Date"> $50 </span>
+                           </td>
+                          <td>
+                              <span class="Date"> Discount </span>
+                           </td>
                            <td>
                               <span class="Status_Tag Bg_Success"> Active </span>
                            </td>
                            <td>
-                             
-                                  <span class="Action_Section Bg_Danger">
-                                    <i class="material-icons">delete</i>
-                                  </span>
-                                  <span class="Action_Section Bg_Info">
-                                    <i class="material-icons">edit</i>
-                                  </span>
-                                  <span class="Action_Section Bg_Success">
-                                    <i class="material-icons"> remove_red_eye </i>
-                                  </span>
+                              <span class="Action_Section Bg_Danger">
+                                <i class="material-icons" (click)="DeletePromotion()">delete</i>
+                              </span>
+                              <span class="Action_Section Bg_Info">
+                                <i class="material-icons" (click)="PromotionEdit()" >edit</i>
+                              </span>
+                              <span class="Action_Section Bg_Success">
+                                <i class="material-icons" (click)="ViewPromotion()"> remove_red_eye </i>
+                              </span>
                                
                            </td>
                         </tr>

@@ -8,8 +8,11 @@ import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
   styleUrls: ['./location-create.component.css']
 })
 export class LocationCreateComponent implements OnInit {
-  title: String;
-  constructor( private ModalRef: BsModalRef) { }
+
+  lat = 36.73252872710401;
+  lng = -119.79924472212213;
+
+  constructor( public bsModalRef: BsModalRef) { }
 
   ngOnInit() {
   }

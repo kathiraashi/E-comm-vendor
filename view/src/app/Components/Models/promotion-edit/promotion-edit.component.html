@@ -1,0 +1,62 @@
+<div class="Modal_Content">
+    <div class="Modal_Header">
+        <p> Promotion Edit </p>
+        <span data-dismiss="modal" (click)="bsModalRef.hide()">&times;</span>
+    </div>
+    <div class="Model_Body">
+        <div class="row">
+            <div class="col-sm-6 Form_Input">
+                <input type="text" placeholder=" Promo Name">
+            </div>
+            <div class="col-sm-6 Form_Input">
+                <input type="text"  placeholder="Promo Code">
+            </div>
+            <div class="col-sm-12 Form_TextArea">
+                <textarea class="message" rows="5" placeholder="Promo Description..."></textarea>
+            </div>
+            <div class="col-sm-6 Form_Input">
+                <input type="text" placeholder="From Date" >
+            </div>
+            <div class="col-sm-6 Form_Input">
+                <input type="text" placeholder="To Date" >
+            </div>   
+            <div class="col-sm-6 Form_Select">
+                <select>
+                <option disabled> -- Applicable To -- </option>
+                <option> New Users </option>
+                <option> Existing Users </option>
+                <option> Existing/New Users </option>
+                </select>
+            </div>
+            <div class="col-sm-6 Form_Input">
+                <input type="text" placeholder="Min Order Value" >
+            </div>
+            <div class="col-sm-6 Form_Select">
+                <select (ngModelChange)="DiscountTypeChange($event)" [(ngModel)]="DiscountType" >
+                <option value="0" disabled> -- Discount Type -- </option>
+                <option value="Flat"> Flat </option>
+                <option value="Percentage"> Percentage </option>
+                </select>
+            </div>
+            <div class="col-sm-6"></div>
+            <ng-container *ngIf="DiscountType === 'Flat'">
+                <div class="col-sm-6 Form_Input">
+                <input type="text" placeholder="Flat Discount Amount($)" >
+                </div>
+                <div class="col-sm-6"></div>
+            </ng-container>
+            <ng-container *ngIf="DiscountType === 'Percentage'">
+                <div class="col-sm-6 Form_Input">
+                <input type="text" placeholder=" Discount Percentage(%)" >
+                </div>
+                <div class="col-sm-6 Form_Input">
+                <input type="text" placeholder="Max Discount Amount($)" >
+                </div>
+            </ng-container>
+        </div>
+    </div>
+    <div class="Model_Footer">
+        <span class="Submit_Btn" > Submit </span>
+    </div>
+</div>
+              

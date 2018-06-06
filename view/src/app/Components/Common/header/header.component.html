@@ -4,7 +4,7 @@
       <img src="assets/images/basic/logo.png" alt="Logo" class="header-logo">
       <div class="logout">
         <h5>
-          <a [routerLink]="['/login-page']"> Logout </a>
+          <a [routerLink]="['/Login']"> Logout </a>
         </h5>
        
       </div>
@@ -12,32 +12,32 @@
     </div>
     <div class="HeaderMenu">
       <ul class="menus">
-        <li class="menu-list">
+        <li class="menu-list" [routerLinkActive]="['active']">
           <a [routerLink]="['/Dashboard']">
             <span class="pull-left"> &nbsp; Dashboard </span>
           </a>
         </li>
-        <li class="menu-list">
+        <li class="menu-list" [routerLinkActive]="['active']">
           <a [routerLink]="['/FoodList']">
             <span class="pull-left"> &nbsp; Food List </span>
           </a>
         </li>
-        <li class="menu-list">
-          <a [routerLink]="['/Orders']">
+        <li class="menu-list" [routerLinkActive]="['active']">
+          <a [routerLink]="['/Orders']" >
             <span class="pull-left"> &nbsp; Orders </span>
           </a>
         </li>
-        <li class="menu-list">
+        <li class="menu-list" [routerLinkActive]="['active']">
           <a [routerLink]="['/Payments']">
             <span class="pull-left"> &nbsp; Payments </span>
           </a>
         </li>
-        <li class="menu-list">
+        <li class="menu-list" [routerLinkActive]="['active']">
           <a [routerLink]="['/Promotions']">
             <span class="pull-left"> &nbsp; Promotions </span>
           </a>
         </li>
-        <li class="menu-list">
+        <li class="menu-list" [routerLinkActive]="['active']">
           <a [routerLink]="['/Locations']">
             <span class="pull-left"> &nbsp; Locations </span>
           </a>
@@ -47,13 +47,13 @@
             <span class="pull-left"> &nbsp; Reports </span>
           </a>
         </li> -->
-        <li class="menu-list">
+        <!-- <li class="menu-list">
           <a [routerLink]="['/Settings']">
             <span class="pull-left"> &nbsp; Config </span>
           </a>
-        </li>
-        <li class="menu-list">
-          <a [routerLink]="['']">
+        </li> -->
+        <li class="menu-list" [routerLinkActive]="['active']">
+          <a [routerLink]="['/Reviews']">
             <span class="pull-left"> &nbsp; Reviews </span>
           </a>
         </li>

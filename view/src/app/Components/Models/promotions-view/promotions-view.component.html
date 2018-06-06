@@ -1,52 +1,27 @@
-<div class="modal-content">
-    <div class="modal-header">
-  <h3 style="color:black;">Promotion Details</h3>
-  
-  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-      </div>
-    
-    <div class="modal-body">
-        <!-- <span class="delete">Get Update </span> -->
-        <form class="form" style="color:black;border-radius:5px;">
-          <div class="row">
-              <div class="col-sm-4 form-group">
-                  <label class="status-lbl">Status </label>
-                </div>
-              <div class="col-sm-8 form-group">                      
-                  <select name="status" class="status-select">
-                    <option>Active</option>
-                    <option>InActive</option>
-                    <option>Expired</option>
-                  </select>
-              </div>
-          </div>
-          
-        </form> 
-        <br>
-        <form class="form" class="form-details" style="color:black;border-radius:5px;">
-            <div class="row">
-                  <div class="col-sm-6 form-group">
-                       <label>Date : May 29,2018</label>
-                    </div>
-                    <div class="col-sm-6 form-group">
-                        <label>Category : Product category</label>
-                     </div>
+<div class="Modal_Content">
+   <div class="Modal_Header">
+      <p> Promotion View</p>
+      <span data-dismiss="modal" (click)="bsModalRef.hide()">&times;</span>
+   </div>
+   <div class="Model_Body">
+      <div class="row">
+         <div class="col-sm-12">
+            <div class="Customer_Info">
+               <h5> Promo Name </h5>
+               <p class="Customer_Details"> Code : <span> #CODE1234 </span> </p>
+               <p class="Customer_Details"> Duration : <span> 01-06-2018 to 01-07-2018 </span> </p>
+               <p class="Customer_Details"> Applicable To : <span> New Users </span> </p>
+               <p class="Customer_Details"> Min Order Value : <span> $50 </span> </p>
+               <p class="Customer_Details"> Discount Type : <span> Flat </span> </p>
+               <p class="Customer_Details"> Discount Amount : <span> $10 </span> </p>
+               <p class="Customer_Details"> Promo Description : <span> Some Promo Description here.... </span> </p>
             </div>
-            <div class="row">
-                <div class="col-sm-6 form-group">
-                     <label>Offer Validity : Jun 10,2018</label>
-                  </div>
-                  <div class="col-sm-6 form-group">
-                      <label>Status : Active</label>
-                   </div>
-          </div>
-      </form>
-       
-  </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal" (click)="bsModalRef.hide()">Close</button>
-    </div>
-  </div>
-  
+         </div>
+      </div>
+      <br>
+   </div>
+   <div class="Model_Footer">
+      <span class="Basic_Btn" (click)="bsModalRef.hide()"> Close </span>
+   </div>
+</div>
+         

@@ -64,33 +64,21 @@
 .Left_Section .List .Item.active span{
     color: #ffffff;
 }
-.Create_Button{
-    margin-left: 33px;
-    border-radius: 0px;
-    border: 1px solid #08A92C;
-    color: #08A92C;
-    font-weight: 600;
-    font-size: 15px;
-    letter-spacing: 0.6px;
-    cursor: pointer;
-    padding: 3px 15px;
-    }
+
 .Search_Section{
-    position:relative;
-    margin-right: 32px;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
    }
 .Search_Section input{
     width: 100%;
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid #cccccc;
-    background-color: transparent;
-    padding-left: 5px;
+    padding-left: 10px;
     height: 35px;
     color: #484848;
     font-weight: 500;
-    padding-top: 8px;
-    outline:none;
+    outline: none;
 }
 .Search_Section input::placeholder{
     color:#cccccc; 
@@ -100,11 +88,19 @@
     position: absolute;
     right: 0px;
     padding: 7px 5px;
-    color: #cccccc;
+    color: #ababab;
     font-weight: 600;
     cursor: pointer;
 }
-
+.Create_Btn{
+    border: 1px solid #08A92C;
+    background:transparent;
+    color: #08A92C;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    padding: 6px 15px;
+}
 
 
 

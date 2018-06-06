@@ -10,9 +10,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
+import { AgmCoreModule } from '@agm/core';
+
 import { AppRoutingModule } from './app.routing.module';
 
-import { ModalModule } from 'ngx-bootstrap';
+import { ModalModule} from 'ngx-bootstrap';
+import {CalendarModule} from 'primeng/calendar';
 
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { HeaderComponent } from './Components/Common/header/header.component';
@@ -29,8 +32,11 @@ import { FoodItemEditComponent } from './Components/Models/food-item-edit/food-i
 import { LocationCreateComponent } from './Components/Models/location-create/location-create.component';
 import { OrderViewComponent } from './Components/Models/order-view/order-view.component';
 import { PromotionsViewComponent } from './Components/Models/promotions-view/promotions-view.component';
-import { PromotionsModelComponent } from './Components/Models/promotions-model/promotions-model.component';
 import { LoginPageComponent } from './Components/login-page/login-page.component';
+import { PromotionAddComponent } from './Components/Models/promotion-add/promotion-add.component';
+import { PromotionEditComponent } from './Components/Models/promotion-edit/promotion-edit.component';
+import { ReviewsComponent } from './Components/reviews/reviews.component';
+import { ReviewsViewComponent } from './Components/Models/reviews-view/reviews-view.component';
 
 
 
@@ -52,8 +58,11 @@ import { LoginPageComponent } from './Components/login-page/login-page.component
     LocationCreateComponent,
     OrderViewComponent,
     PromotionsViewComponent,
-    PromotionsModelComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    PromotionAddComponent,
+    PromotionEditComponent,
+    ReviewsComponent,
+    ReviewsViewComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +73,9 @@ import { LoginPageComponent } from './Components/login-page/login-page.component
     ReactiveFormsModule,
     RouterModule,
     AppRoutingModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    CalendarModule,
+    AgmCoreModule.forRoot({ apiKey: 'AIzaSyAKAH7vSuRjbTP16E9AFaUf6gDa69DZ4e8'}),
   ],
   providers: [],
   entryComponents: [
@@ -74,7 +85,9 @@ import { LoginPageComponent } from './Components/login-page/login-page.component
     LocationCreateComponent,
     OrderViewComponent,
     PromotionsViewComponent,
-    PromotionsModelComponent
+    PromotionAddComponent,
+    PromotionEditComponent,
+    ReviewsViewComponent
   ],
   bootstrap: [AppComponent]
 })

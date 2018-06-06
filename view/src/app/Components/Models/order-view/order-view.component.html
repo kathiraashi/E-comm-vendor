@@ -1,21 +1,34 @@
-<div class="modal-content">
-  <div class="modal-header">
-<h3 style="color:black;">Order Details</h3>
-
-<button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
-    <span aria-hidden="true">&times;</span>
-  </button>
-    </div>
-    <p class="sub-title">Customer Details</p>
-    <p class="customer-details">Name : Customer Name</p>
-    <p class="customer-details">Contact Number : (+91) 123456789</p>
-    <p class="customer-details">Email Id : customeremail@gmail.com</p>
-    <p class="customer-details">Address : 12, Street Name, City Name - Postal Code</p>
-  <div class="modal-body">
-      <!-- <span class="delete">Get Update </span> -->
+<div class="Modal_Content">
+   <div class="Modal_Header">
+      <p> Order Details</p>
+      <span data-dismiss="modal" (click)="bsModalRef.hide()">&times;</span>
+   </div>
+   <div class="Model_Body">
+      <br>
+      <div class="row">
+         <div class="col-sm-6">
+            <div class="Customer_Info">
+               <h5> Customer Details</h5>
+               <p class="Customer_Details"> Name : <span> Customer Name </span> </p>
+               <p class="Customer_Details"> Mobile : <span> (+1) 987 654 3210 </span> </p>
+               <p class="Customer_Details"> Email : <span> customer.email@gmail.com </span> </p>
+               <p class="Customer_Details"> Address : <span> 12, Street Name, City Name, Country </span> </p>
+            </div>
+         </div>
+         <div class="col-sm-6">
+            <div class="Customer_Info">
+               <h5> Delivery Location Details</h5>
+               <p class="Customer_Details"> Location Name : <span> Location Name </span> </p>
+               <p class="Customer_Details"> Latitude & Longitude : <span> 12.43583745 - 543.4564644</span> </p>
+               <p class="Customer_Details"> Address : <span> 12, Street Name, City Name, Country </span> </p>
+            </div>
+         </div>
+      </div>
+      <br>
+      <br>
       <form class="form" style="color:black;border-radius:5px;">
           <div class="row">
-              <div class="col-sm-4 form-group">
+              <div class="col-sm-4 form-group text-right">
                 <label class="status-lbl">Order Status </label>
               </div>
                   <div class="col-sm-8 form-group">                      
@@ -25,58 +38,55 @@
                         <option>Cancelled</option>
                       </select>
                   </div>
-                 
           </div>    
       </form> 
       <br>
-      <h4>Food Details</h4>
-      <table class="table table-condensed">
-        <thead class="tbl">
-        <tr>
-          <th>Food Name</th>
-          <th style="width:100px;">Price</th>
-        </tr>
-      </thead>
-        <tbody>
-          <tr>
-            <td>Food1 Name</td>
-            <td>$30.00</td>
-          </tr>
-          <tr>
-              <td>Food2 Name</td>
-              <td>$15.00</td>
+      <h4>Ordered Food Details</h4>
+      <table class="table">
+        <thead>
+            <tr>
+               <th>Food Name</th>
+               <th style="width:100px;">Price</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Food1 Name</td>
+               <td>$30.00</td>
             </tr>
             <tr>
-                <td>Food3 Name</td>
-                <td>$27.50</td>
-              </tr>
-              <tr>
-                  <td>Food4 Name</td>
-                  <td>$50.00</td>
-                </tr>
-          
-        
-              <tr>
-                <td class="text-right bottomborderless-row">Sub Total</td>
-                <td class="bottomborderless-row">$117.50</td>
-              </tr>
-              <tr>
-                  <td class="text-right borderless-row">Delivery</td>
-                  <td class="borderless-row">$15.00</td>
-              </tr>
-              <tr>
-                    <td class="text-right borderless-row">VAT (5%)</td>
-                    <td class="borderless-row">$6.00</td>
-              </tr>
-              <tr>
-                  <td class="text-right">Total</td>
-                  <td>$138.50</td>
+               <td>Food2 Name</td>
+               <td>$15.00</td>
             </tr>
-        </tbody>
+            <tr>
+               <td>Food3 Name</td>
+               <td>$27.50</td>
+            </tr>
+            <tr>
+               <td>Food4 Name</td>
+               <td>$50.00</td>
+            </tr>
+            
+            <tr>
+               <td class="text-right bottomborderless-row">Sub Total</td>
+               <td class="bottomborderless-row">$117.50</td>
+            </tr>
+            <tr>
+               <td class="text-right borderless-row">Delivery Charges</td>
+               <td class="borderless-row">$15.00</td>
+            </tr>
+            <tr>
+                  <td class="text-right borderless-row">TAX (5%)</td>
+                  <td class="borderless-row">$6.00</td>
+            </tr>
+            <tr>
+               <td class="text-right">Total</td>
+               <td>$138.50</td>
+            </tr>
+         </tbody>
       </table>
-    
-</div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal" (click)="bsModalRef.hide()">Close</button>
-  </div>
+   </div>
+   <div class="Model_Footer">
+      <span class="Basic_Btn" (click)="bsModalRef.hide()"> Close </span>
+   </div>
 </div>

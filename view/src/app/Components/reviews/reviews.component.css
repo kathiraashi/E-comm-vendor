@@ -18,48 +18,10 @@
 }
 .PageIdentity .Identity span{
     cursor: pointer;
-    color: #06a92c;
-    font-weight: 600;
-    font-size: 15px;
-}
-.Search_Section{
-    position: relative;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-   }
-.Search_Section input{
-    width: 100%;
-    border-radius: 0;
-    border: none;
-    padding-left: 10px;
-    height: 35px;
-    color: #484848;
-    font-weight: 500;
-    outline: none;
-}
-.Search_Section input::placeholder{
-    color:#cccccc; 
-    font-weight:400;
- }
-.Search_Section i{
-    position: absolute;
-    right: 0px;
-    padding: 7px 5px;
-    color: #ababab;
-    font-weight: 600;
-    cursor: pointer;
-}
-.Create_Btn{
-    border: 1px solid #08A92C;
-    background:transparent;
     color: #08A92C;
     font-weight: 600;
     font-size: 15px;
-    letter-spacing: 0.6px;
-    padding: 6px 15px;
 }
-
-
 .Left_Section {
     background-color: #fff;
 }
@@ -88,9 +50,36 @@
     font-weight: 600;
 }
 .Left_Section .List .Item:hover span{
-    color: #08a92c
+    color: #08A92C
 }
 
+.Search_Section{
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+   }
+.Search_Section input{
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    padding-left: 10px;
+    height: 35px;
+    color: #484848;
+    font-weight: 500;
+    outline: none;
+}
+.Search_Section input::placeholder{
+    color:#cccccc; 
+    font-weight:400;
+ }
+.Search_Section i{
+    position: absolute;
+    right: 0px;
+    padding: 7px 5px;
+    color: #ababab;
+    font-weight: 600;
+    cursor: pointer;
+}
 
 
 
@@ -100,10 +89,10 @@
     width: 100%;
 }
 .Table_Section table thead {
-    border: 1px #08a92c;
+    border: 1px #08A92C;
     line-height: 40px;
     text-align: center;
-    background-color: #06a92c;
+    background-color: #08A92C;
     color: #ffffff;
     font-size: 14px;
     letter-spacing: 0.5px;

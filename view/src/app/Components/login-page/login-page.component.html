@@ -1,16 +1,24 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="form-section">
-        <div class="form">
-      <form>
-        <h5 style="text-align:center;"> login</h5>
-        <input type="text" name="username" value="username"><br>
-        <input type="password" name="password" value="password"><br>
-        <span class="login-design">login></span>
-        </form>
-        </div>
-        </div>
-      </div>
-   </div>
-  </div>
+<div class="login-section">
+	<div class="image-section">
+		<div class="over"></div>
+	   <img src="assets/images/basic/login_background_promo.jpg">
+		</div>
+	<div class="form-section">
+		<div class="form">
+			<h5 style="text-align:center;margin: 30px 0px;font-size: 25px;"> login</h5><br>
+			<div class="icon">
+			<i class="material-icons">
+					person
+					</i>
+			<input type="text" name="username" placeholder="username">
+			</div><br>
+			<div class="icon">
+				<i class="material-icons">
+						lock
+						</i>
+			<input type="password" name="password" placeholder="password">
+			</div><br>
+			<button class="login-design" [routerLink]="['/Dashboard']">login</button>
+		</div>
+		</div>
+</div>

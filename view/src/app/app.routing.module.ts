@@ -1,16 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-
-import { CommonModule} from '@angular/common';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { HttpClientModule } from '@angular/common/http';
-
-
-import { AppComponent } from './app.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { OrdersComponent } from './Components/orders/orders.component';
 import { PaymentsComponent } from './Components/payments/payments.component';
@@ -20,12 +10,13 @@ import { SettingsComponent } from './Components/settings/settings.component';
 import { PromotionsComponent } from './Components/promotions/promotions.component';
 import { FoodListComponent } from './Components/food-list/food-list.component';
 import { LoginPageComponent } from './Components/login-page/login-page.component';
+import { ReviewsComponent } from './Components/reviews/reviews.component';
 
 const appRoutes: Routes = [
     { path: '',
-        component: DashboardComponent,
+        component: LoginPageComponent,
         data: {
-            animation: { value: 'Dashboard', }
+            animation: { value: 'Login', }
         }
     },
     { path: 'Dashboard',
@@ -64,10 +55,10 @@ const appRoutes: Routes = [
             animation: { value: 'Promotions', }
         }
     },
-    { path: 'Reports',
-        component: ReportsComponent,
+    { path: 'Reviews',
+        component: ReviewsComponent,
         data: {
-            animation: { value: 'Reports', }
+            animation: { value: 'Reviews', }
         }
     },
     { path: 'Settings',
@@ -76,10 +67,10 @@ const appRoutes: Routes = [
             animation: { value: 'Settings', }
         }
     },
-    { path: 'login-page',
+    { path: 'Login',
         component: LoginPageComponent,
         data: {
-            animation: { value: 'login-page', }
+            animation: { value: 'Login', }
         }
     }
 ];

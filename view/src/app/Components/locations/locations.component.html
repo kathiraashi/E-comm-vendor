@@ -13,15 +13,15 @@
     <div class="row">
       <div class="col-sm-12">
         <div class="row">
-          <div class="col-sm-6">
-            <span class="Create_Button" (click)="createlocation()">Add Item</span>
-          </div>
-          <div class="col-sm-6">
-            <div class="Search_Section">
-              <input type="text" placeholder="Search.." name="search">
-              <i class="material-icons">search</i>
+            <div class="col-sm-7">
+              <button class=" Create_Btn" (click)="CreateLocation()">Create New</button>
             </div>
-          </div>
+            <div class="col-sm-5">
+              <div class="Search_Section">
+                <input type="text" placeholder="Search..">
+                <i class="material-icons">search</i>
+              </div>
+            </div>
         </div>
         <br>
         <div class="Table_Section">
@@ -62,13 +62,13 @@
 
                 <td>
                   <span class="Action_Section Bg_Danger">
-                    <i class="material-icons">delete</i>
+                    <i class="material-icons" (click)="DeleteLocation()">delete</i>
                   </span>
                   <span class="Action_Section Bg_Info">
-                    <i class="material-icons">edit</i>
+                    <i class="material-icons" (click)="CreateLocation()" >edit</i>
                   </span>
                   <span class="Action_Section Bg_Success">
-                    <i class="material-icons"> remove_red_eye </i>
+                    <i class="material-icons" (click)="CreateLocation()"> remove_red_eye </i>
                   </span>
                 </td>
               </tr>
@@ -96,13 +96,13 @@
 
                 <td>
                     <span class="Action_Section Bg_Danger">
-                        <i class="material-icons">delete</i>
+                        <i class="material-icons" (click)="DeleteLocation()" >delete</i>
                       </span>
                       <span class="Action_Section Bg_Info">
-                        <i class="material-icons">edit</i>
+                        <i class="material-icons" (click)="CreateLocation()">edit</i>
                       </span>
                       <span class="Action_Section Bg_Success">
-                        <i class="material-icons"> remove_red_eye </i>
+                        <i class="material-icons" (click)="CreateLocation()"> remove_red_eye </i>
                       </span>
                 </td>
               </tr>
@@ -130,13 +130,13 @@
 
                 <td>
                     <span class="Action_Section Bg_Danger">
-                        <i class="material-icons">delete</i>
+                        <i class="material-icons" (click)="DeleteLocation()">delete</i>
                       </span>
                       <span class="Action_Section Bg_Info">
-                        <i class="material-icons">edit</i>
+                        <i class="material-icons" (click)="CreateLocation()">edit</i>
                       </span>
                       <span class="Action_Section Bg_Success">
-                        <i class="material-icons"> remove_red_eye </i>
+                        <i class="material-icons" (click)="CreateLocation()"> remove_red_eye </i>
                       </span>
                 </td>
               </tr>
@@ -164,13 +164,13 @@
 
                 <td>
                     <span class="Action_Section Bg_Danger">
-                        <i class="material-icons">delete</i>
+                        <i class="material-icons" (click)="DeleteLocation()">delete</i>
                       </span>
                       <span class="Action_Section Bg_Info">
-                        <i class="material-icons">edit</i>
+                        <i class="material-icons" (click)="CreateLocation()">edit</i>
                       </span>
                       <span class="Action_Section Bg_Success">
-                        <i class="material-icons"> remove_red_eye </i>
+                        <i class="material-icons" (click)="CreateLocation()"> remove_red_eye </i>
                       </span>
                 </td>
               </tr>
